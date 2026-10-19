@@ -5,8 +5,8 @@
   "instance": "U-04406:G05:0",
   "goal_id": "G05",
   "name": "first_paid_7d",
-  "started_at": "2026-10-01T14:30:04.338Z",
-  "deadline": "2026-10-08T14:30:04.338Z",
+  "started_at": "2026-10-01T14:30:04.337Z",
+  "deadline": "2026-10-08T14:30:04.337Z",
   "rule_version": 1,
   "success_signal": "purchase_completed: is_trial = false",
   "status": "open",
@@ -35,7 +35,7 @@
  "last_trigger": null,
  "live_page": {
   "action_id": "A-00919",
-  "published_at": "2026-10-01T14:30:04.338Z",
+  "published_at": "2026-10-01T14:30:04.337Z",
   "dialect": "d1",
   "goal_instance": "U-04406:G05:0",
   "title_ids": [
@@ -97,8 +97,8 @@
    "goal_instance": "U-04406:G05:0",
    "goal_id": "G05",
    "rule_version": 1,
-   "started_at": "2026-10-01T14:30:04.338Z",
-   "deadline": "2026-10-08T14:30:04.338Z",
+   "started_at": "2026-10-01T14:30:04.337Z",
+   "deadline": "2026-10-08T14:30:04.337Z",
    "status": "failed",
    "reason": "no success event inside the window",
    "signal_event_id": null

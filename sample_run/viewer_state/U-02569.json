@@ -87,7 +87,7 @@
   {
    "action_id": "A-00139",
    "type": "in_app_message",
-   "send_at": "2026-10-01T03:25:27.628Z",
+   "send_at": "2026-10-01T03:25:27.627Z",
    "status": "sent",
    "goal_instance": "U-02569:G01:0",
    "title_id": "T0526"

@@ -5,8 +5,8 @@
   "instance": "U-02198:G01:0",
   "goal_id": "G01",
   "name": "first_play_24h",
-  "started_at": "2026-10-01T14:26:36.269Z",
-  "deadline": "2026-10-02T14:26:36.269Z",
+  "started_at": "2026-10-01T14:26:36.268Z",
+  "deadline": "2026-10-02T14:26:36.268Z",
   "rule_version": 1,
   "success_signal": "play_started: any title",
   "status": "open",
@@ -36,7 +36,7 @@
  "last_trigger": null,
  "live_page": {
   "action_id": "A-00904",
-  "published_at": "2026-10-01T14:26:36.269Z",
+  "published_at": "2026-10-01T14:26:36.268Z",
   "dialect": "d3",
   "goal_instance": "U-02198:G01:0",
   "title_ids": [
@@ -77,8 +77,8 @@
    "goal_instance": "U-02198:G01:0",
    "goal_id": "G01",
    "rule_version": 1,
-   "started_at": "2026-10-01T14:26:36.269Z",
-   "deadline": "2026-10-02T14:26:36.269Z",
+   "started_at": "2026-10-01T14:26:36.268Z",
+   "deadline": "2026-10-02T14:26:36.268Z",
    "status": "failed",
    "reason": "no success event inside the window",
    "signal_event_id": null

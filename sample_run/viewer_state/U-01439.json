@@ -5,8 +5,8 @@
   "instance": "U-01439:G12:0",
   "goal_id": "G12",
   "name": "return_after_absence_7d",
-  "started_at": "2026-10-01T15:42:27.685Z",
-  "deadline": "2026-10-08T15:42:27.685Z",
+  "started_at": "2026-10-01T15:42:27.684Z",
+  "deadline": "2026-10-08T15:42:27.684Z",
   "rule_version": 1,
   "success_signal": "play_started: any title",
   "status": "open",
@@ -35,7 +35,7 @@
  "last_trigger": null,
  "live_page": {
   "action_id": "A-01113",
-  "published_at": "2026-10-01T15:42:27.685Z",
+  "published_at": "2026-10-01T15:42:27.684Z",
   "dialect": "d3",
   "goal_instance": "U-01439:G12:0",
   "title_ids": [
@@ -67,8 +67,8 @@
    "goal_instance": "U-01439:G12:0",
    "goal_id": "G12",
    "rule_version": 1,
-   "started_at": "2026-10-01T15:42:27.685Z",
-   "deadline": "2026-10-08T15:42:27.685Z",
+   "started_at": "2026-10-01T15:42:27.684Z",
+   "deadline": "2026-10-08T15:42:27.684Z",
    "status": "failed",
    "reason": "no success event inside the window",
    "signal_event_id": null

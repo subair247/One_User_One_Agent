@@ -5,8 +5,8 @@
   "instance": "U-03017:G09:0",
   "goal_id": "G09",
   "name": "weekly_habit_14d",
-  "started_at": "2026-10-01T02:47:33.712Z",
-  "deadline": "2026-10-15T02:47:33.712Z",
+  "started_at": "2026-10-01T02:47:33.713Z",
+  "deadline": "2026-10-15T02:47:33.713Z",
   "rule_version": 1,
   "success_signal": "play_started: on 3 distinct IST days",
   "status": "open",
@@ -40,7 +40,7 @@
  "last_trigger": null,
  "live_page": {
   "action_id": "A-00627",
-  "published_at": "2026-10-01T10:45:25.756Z",
+  "published_at": "2026-10-01T10:45:25.757Z",
   "dialect": "d1",
   "goal_instance": "U-03017:G09:0",
   "title_ids": [
@@ -112,8 +112,8 @@
    "goal_instance": "U-03017:G09:0",
    "goal_id": "G09",
    "rule_version": 1,
-   "started_at": "2026-10-01T02:47:33.712Z",
-   "deadline": "2026-10-15T02:47:33.712Z",
+   "started_at": "2026-10-01T02:47:33.713Z",
+   "deadline": "2026-10-15T02:47:33.713Z",
    "status": "succeeded",
    "reason": "success event observed in window",
    "signal_event_id": "oua-019043"

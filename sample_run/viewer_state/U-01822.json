@@ -5,8 +5,8 @@
   "instance": "U-01822:G02:0",
   "goal_id": "G02",
   "name": "first_full_episode_3d",
-  "started_at": "2026-09-30T19:39:35.515Z",
-  "deadline": "2026-10-03T19:39:35.515Z",
+  "started_at": "2026-09-30T19:39:35.516Z",
+  "deadline": "2026-10-03T19:39:35.516Z",
   "rule_version": 1,
   "success_signal": "episode_completed: any episode",
   "status": "open",
@@ -40,7 +40,7 @@
  "last_trigger": null,
  "live_page": {
   "action_id": "A-00643",
-  "published_at": "2026-10-01T10:56:41.488Z",
+  "published_at": "2026-10-01T10:56:41.487Z",
   "dialect": "d6",
   "goal_instance": "U-01822:G02:0",
   "title_ids": [
@@ -98,8 +98,8 @@
    "goal_instance": "U-01822:G02:0",
    "goal_id": "G02",
    "rule_version": 1,
-   "started_at": "2026-09-30T19:39:35.515Z",
-   "deadline": "2026-10-03T19:39:35.515Z",
+   "started_at": "2026-09-30T19:39:35.516Z",
+   "deadline": "2026-10-03T19:39:35.516Z",
    "status": "failed",
    "reason": "no success event inside the window",
    "signal_event_id": null

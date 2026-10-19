@@ -5,8 +5,8 @@
   "instance": "U-00170:G01:0",
   "goal_id": "G01",
   "name": "first_play_24h",
-  "started_at": "2026-10-01T10:30:09.685Z",
-  "deadline": "2026-10-02T10:30:09.685Z",
+  "started_at": "2026-10-01T10:30:09.684Z",
+  "deadline": "2026-10-02T10:30:09.684Z",
   "rule_version": 1,
   "success_signal": "play_started: any title",
   "status": "open",
@@ -36,7 +36,7 @@
  "last_trigger": null,
  "live_page": {
   "action_id": "A-00598",
-  "published_at": "2026-10-01T10:30:09.685Z",
+  "published_at": "2026-10-01T10:30:09.684Z",
   "dialect": "d3",
   "goal_instance": "U-00170:G01:0",
   "title_ids": [
@@ -57,7 +57,7 @@
   {
    "action_id": "A-00599",
    "type": "in_app_message",
-   "send_at": "2026-10-01T10:30:09.665Z",
+   "send_at": "2026-10-01T10:30:09.664Z",
    "status": "sent",
    "goal_instance": "U-00170:G01:0",
    "title_id": "T0901"
@@ -77,8 +77,8 @@
    "goal_instance": "U-00170:G01:0",
    "goal_id": "G01",
    "rule_version": 1,
-   "started_at": "2026-10-01T10:30:09.685Z",
-   "deadline": "2026-10-02T10:30:09.685Z",
+   "started_at": "2026-10-01T10:30:09.684Z",
+   "deadline": "2026-10-02T10:30:09.684Z",
    "status": "succeeded",
    "reason": "success event observed in window",
    "signal_event_id": "oua-001064"

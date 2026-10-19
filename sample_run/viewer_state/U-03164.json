@@ -5,8 +5,8 @@
   "instance": "U-03164:G06:0",
   "goal_id": "G06",
   "name": "reactivate_lapsed_14d",
-  "started_at": "2026-10-01T15:06:25.243Z",
-  "deadline": "2026-10-15T15:06:25.243Z",
+  "started_at": "2026-10-01T15:06:25.244Z",
+  "deadline": "2026-10-15T15:06:25.244Z",
   "rule_version": 1,
   "success_signal": "purchase_completed: any paid plan",
   "status": "open",
@@ -35,7 +35,7 @@
  "last_trigger": null,
  "live_page": {
   "action_id": "A-01032",
-  "published_at": "2026-10-01T15:06:25.243Z",
+  "published_at": "2026-10-01T15:06:25.244Z",
   "dialect": "d4",
   "goal_instance": "U-03164:G06:0",
   "title_ids": [
@@ -107,8 +107,8 @@
    "goal_instance": "U-03164:G06:0",
    "goal_id": "G06",
    "rule_version": 1,
-   "started_at": "2026-10-01T15:06:25.243Z",
-   "deadline": "2026-10-15T15:06:25.243Z",
+   "started_at": "2026-10-01T15:06:25.244Z",
+   "deadline": "2026-10-15T15:06:25.244Z",
    "status": "failed",
    "reason": "no success event inside the window",
    "signal_event_id": null

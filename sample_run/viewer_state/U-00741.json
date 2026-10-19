@@ -5,8 +5,8 @@
   "instance": "U-00741:G07:0",
   "goal_id": "G07",
   "name": "resume_series_3d",
-  "started_at": "2026-10-01T15:49:54.984Z",
-  "deadline": "2026-10-04T15:49:54.984Z",
+  "started_at": "2026-10-01T15:49:54.983Z",
+  "deadline": "2026-10-04T15:49:54.983Z",
   "rule_version": 1,
   "success_signal": "play_started: same content_slug as the unfinished series",
   "status": "open",
@@ -40,7 +40,7 @@
  "last_trigger": null,
  "live_page": {
   "action_id": "A-01125",
-  "published_at": "2026-10-01T15:49:54.984Z",
+  "published_at": "2026-10-01T15:49:54.983Z",
   "dialect": "d3",
   "goal_instance": "U-00741:G07:0",
   "title_ids": [
@@ -83,8 +83,8 @@
    "goal_instance": "U-00741:G07:0",
    "goal_id": "G07",
    "rule_version": 1,
-   "started_at": "2026-10-01T15:49:54.984Z",
-   "deadline": "2026-10-04T15:49:54.984Z",
+   "started_at": "2026-10-01T15:49:54.983Z",
+   "deadline": "2026-10-04T15:49:54.983Z",
    "status": "succeeded",
    "reason": "success event observed in window",
    "signal_event_id": "oua-004940"

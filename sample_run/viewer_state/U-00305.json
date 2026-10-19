@@ -5,8 +5,8 @@
   "instance": "U-00305:G08:0",
   "goal_id": "G08",
   "name": "try_new_release_7d",
-  "started_at": "2026-10-01T04:30:17.035Z",
-  "deadline": "2026-10-08T04:30:17.035Z",
+  "started_at": "2026-10-01T04:30:17.034Z",
+  "deadline": "2026-10-08T04:30:17.034Z",
   "rule_version": 1,
   "success_signal": "play_started: a title released in the 30 days before the goal start",
   "status": "open",
@@ -33,7 +33,7 @@
  "last_trigger": null,
  "live_page": {
   "action_id": "A-00185",
-  "published_at": "2026-10-01T04:30:17.035Z",
+  "published_at": "2026-10-01T04:30:17.034Z",
   "dialect": "d1",
   "goal_instance": "U-00305:G08:0",
   "title_ids": [
@@ -105,8 +105,8 @@
    "goal_instance": "U-00305:G08:0",
    "goal_id": "G08",
    "rule_version": 1,
-   "started_at": "2026-10-01T04:30:17.035Z",
-   "deadline": "2026-10-08T04:30:17.035Z",
+   "started_at": "2026-10-01T04:30:17.034Z",
+   "deadline": "2026-10-08T04:30:17.034Z",
    "status": "failed",
    "reason": "no success event inside the window",
    "signal_event_id": null
