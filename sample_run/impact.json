@@ -1,0 +1,213 @@
+{
+  "itt": {
+    "overall": {
+      "agent_n": 733,
+      "agent_conclusive": 733,
+      "agent_success": 100,
+      "holdout_n": 719,
+      "holdout_conclusive": 719,
+      "holdout_success": 89,
+      "p1": 0.1364256480218281,
+      "p0": 0.12378303198887343,
+      "diff": 0.012642616032954676,
+      "ci_low": -0.02195444289137357,
+      "ci_high": 0.04723967495728292,
+      "p_value": 0.474102213050591
+    },
+    "by_goal": {
+      "G01": {
+        "agent_n": 59,
+        "agent_conclusive": 59,
+        "agent_success": 22,
+        "holdout_n": 51,
+        "holdout_conclusive": 51,
+        "holdout_success": 15,
+        "p1": 0.3728813559322034,
+        "p0": 0.29411764705882354,
+        "diff": 0.07876370887337986,
+        "ci_low": -0.09691874276817475,
+        "ci_high": 0.25444616051493446,
+        "p_value": 0.38325786783384413
+      },
+      "G02": {
+        "agent_n": 182,
+        "agent_conclusive": 182,
+        "agent_success": 26,
+        "holdout_n": 162,
+        "holdout_conclusive": 162,
+        "holdout_success": 18,
+        "p1": 0.14285714285714285,
+        "p0": 0.1111111111111111,
+        "diff": 0.031746031746031744,
+        "ci_low": -0.0384444048127371,
+        "ci_high": 0.10193646830480059,
+        "p_value": 0.378867837480088
+      },
+      "G03": {
+        "agent_n": 1,
+        "agent_conclusive": 1,
+        "agent_success": 0,
+        "holdout_n": 0,
+        "holdout_conclusive": 0,
+        "holdout_success": 0,
+        "p1": null,
+        "p0": null,
+        "diff": null,
+        "ci_low": null,
+        "ci_high": null,
+        "p_value": null
+      },
+      "G04": {
+        "agent_n": 1,
+        "agent_conclusive": 1,
+        "agent_success": 0,
+        "holdout_n": 1,
+        "holdout_conclusive": 1,
+        "holdout_success": 0,
+        "p1": 0.0,
+        "p0": 0.0,
+        "diff": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "p_value": 1.0
+      },
+      "G05": {
+        "agent_n": 45,
+        "agent_conclusive": 45,
+        "agent_success": 2,
+        "holdout_n": 49,
+        "holdout_conclusive": 49,
+        "holdout_success": 3,
+        "p1": 0.044444444444444446,
+        "p0": 0.061224489795918366,
+        "diff": -0.01678004535147392,
+        "ci_low": -0.10695579255939958,
+        "ci_high": 0.07339570185645175,
+        "p_value": 0.7172443908994591
+      },
+      "G06": {
+        "agent_n": 15,
+        "agent_conclusive": 15,
+        "agent_success": 1,
+        "holdout_n": 9,
+        "holdout_conclusive": 9,
+        "holdout_success": 2,
+        "p1": 0.06666666666666667,
+        "p0": 0.2222222222222222,
+        "diff": -0.15555555555555556,
+        "ci_low": -0.4550736834148284,
+        "ci_high": 0.14396257230371728,
+        "p_value": 0.2646162170835888
+      },
+      "G07": {
+        "agent_n": 348,
+        "agent_conclusive": 348,
+        "agent_success": 14,
+        "holdout_n": 349,
+        "holdout_conclusive": 349,
+        "holdout_success": 13,
+        "p1": 0.040229885057471264,
+        "p0": 0.03724928366762178,
+        "diff": 0.0029806013898494854,
+        "ci_low": -0.025672173227989224,
+        "ci_high": 0.031633376007688195,
+        "p_value": 0.8384367394049164
+      },
+      "G08": {
+        "agent_n": 24,
+        "agent_conclusive": 24,
+        "agent_success": 7,
+        "holdout_n": 29,
+        "holdout_conclusive": 29,
+        "holdout_success": 7,
+        "p1": 0.2916666666666667,
+        "p0": 0.2413793103448276,
+        "diff": 0.05028735632183909,
+        "ci_low": -0.1891420241137683,
+        "ci_high": 0.28971673675744647,
+        "p_value": 0.6793591987172884
+      },
+      "G09": {
+        "agent_n": 12,
+        "agent_conclusive": 12,
+        "agent_success": 3,
+        "holdout_n": 10,
+        "holdout_conclusive": 10,
+        "holdout_success": 2,
+        "p1": 0.25,
+        "p0": 0.2,
+        "diff": 0.04999999999999999,
+        "ci_low": -0.2985550171780633,
+        "ci_high": 0.3985550171780633,
+        "p_value": 0.7805117347097876
+      },
+      "G12": {
+        "agent_n": 46,
+        "agent_conclusive": 46,
+        "agent_success": 25,
+        "holdout_n": 59,
+        "holdout_conclusive": 59,
+        "holdout_success": 29,
+        "p1": 0.5434782608695652,
+        "p0": 0.4915254237288136,
+        "diff": 0.051952837140751607,
+        "ci_low": -0.14038457755314576,
+        "ci_high": 0.24429025183464897,
+        "p_value": 0.5971676466139089
+      }
+    }
+  },
+  "served_vs_rest_biased": {
+    "served_n": 698,
+    "served_success": 99,
+    "rest_n": 754,
+    "rest_success": 90,
+    "p1": 0.14183381088825214,
+    "p0": 0.11936339522546419,
+    "diff": 0.022470415662787957,
+    "ci_low": -0.012249282985787938,
+    "ci_high": 0.05719011431136385,
+    "p_value": 0.2035936545817177
+  },
+  "pilot": {
+    "served": {
+      "n": 217,
+      "success": 87
+    },
+    "rest": {
+      "n": 3674,
+      "success": 649
+    },
+    "biased": {
+      "p1": 0.4009216589861751,
+      "p0": 0.17664670658682635,
+      "diff": 0.22427495239934875,
+      "ci_low": 0.15791155998939166,
+      "ci_high": 0.29063834480930584,
+      "p_value": 2.4579183713659625e-16
+    },
+    "treatment": {
+      "n": 1912,
+      "success": 349
+    },
+    "holdout": {
+      "n": 1979,
+      "success": 387
+    },
+    "itt": {
+      "p1": 0.18253138075313807,
+      "p0": 0.1955533097524002,
+      "diff": -0.013021928999262133,
+      "ci_low": -0.037622184440983544,
+      "ci_high": 0.011578326442459277,
+      "p_value": 0.2997854506278967
+    },
+    "mean_prior_app_opens": {
+      "served (treatment)": 0.14285714285714285,
+      "not served (treatment)": 0.17168141592920355,
+      "holdout": 0.18089944416371906
+    },
+    "served_share_of_treatment": 0.11349372384937238
+  },
+  "inconclusive_goals": 0
+}

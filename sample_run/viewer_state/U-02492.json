@@ -1,0 +1,80 @@
+{
+ "viewer_id": "U-02492",
+ "arm": "agent",
+ "goal": null,
+ "goals": [],
+ "decisions": [
+  "D-00215",
+  "D-00303"
+ ],
+ "actions": [],
+ "pending": [],
+ "seen_triggers": [
+  "7c8e767a-9884-4557-a8b9-ddfebbb8b475",
+  "8507e319-9d36-44d5-9f8b-b3f5dba805e9"
+ ],
+ "last_session_id": null,
+ "last_trigger": null,
+ "live_page": null,
+ "messages": [],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": []
+ },
+ "outcomes": [],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-02492@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T08:48:21.154Z",
+   "freshness_s": 156681.2,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-09-26T05:39:48.352000+00:00",
+   "source": "profile:U-02492",
+   "as_of": "2026-09-29T08:48:21.154Z",
+   "freshness_s": 156681.2,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": null,
+   "source": "app_setting:8507e319-9d36-44d5-9f8b-b3f5dba805e9",
+   "as_of": "2026-10-01T04:19:42.339Z",
+   "freshness_s": 0.0,
+   "rule": "app_dialect None is missing or not in the catalogue; page cannot be verified"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:8507e319-9d36-44d5-9f8b-b3f5dba805e9",
+   "as_of": "2026-10-01T04:19:42.339Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-02492",
+   "as_of": "2026-09-29T08:48:21.154Z",
+   "freshness_s": 156681.2,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-02492",
+   "as_of": "2026-09-29T08:48:21.154Z",
+   "freshness_s": 156681.2,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d3"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used None (app_setting) vs profile:d3"
+ ]
+}

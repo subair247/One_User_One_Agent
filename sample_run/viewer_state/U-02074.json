@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-02074",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-02074:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T02:16:16.154Z",
+  "deadline": "2026-10-04T02:16:16.154Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "guka-kosusa-d2",
+   "title_id": "T0522",
+   "next_episode": 3
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series guka-kosusa-d2 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:b2de0385-b3c6-4a51-a747-e5609e7f0319"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00152"
+ ],
+ "actions": [
+  "A-00091",
+  "A-00092"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "be5d28c7-1c53-410c-b94a-c9c5aeaede2d"
+ ],
+ "last_session_id": "2c94edd9-00ab-4b2a-a964-179d418f86aa",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00091",
+  "published_at": "2026-10-01T02:16:16.154Z",
+  "dialect": "d2",
+  "goal_instance": "U-02074:G07:0",
+  "title_ids": [
+   "T0522",
+   "T0526",
+   "T0528",
+   "T0540",
+   "T0530",
+   "T0533",
+   "T0534",
+   "T0550",
+   "T0548",
+   "T0556",
+   "T0568",
+   "T0523",
+   "T0524",
+   "T0529",
+   "T0525",
+   "T0536",
+   "T0531",
+   "T0539",
+   "T0538",
+   "T0554",
+   "T0542",
+   "T0535",
+   "T0584",
+   "T0596",
+   "T0616",
+   "T0679",
+   "T0779",
+   "T0829",
+   "T0832",
+   "T0575",
+   "T0746",
+   "T0565",
+   "T0620",
+   "T0547",
+   "T0899",
+   "T0567",
+   "T0590",
+   "T0559",
+   "T0580",
+   "T0848",
+   "T0652",
+   "T0546",
+   "T0581",
+   "T0553",
+   "T0578",
+   "T0900",
+   "T0618",
+   "T0639",
+   "T0604",
+   "T0716",
+   "T0560"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00092",
+   "type": "push",
+   "send_at": "2026-10-01T14:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-02074:G07:0",
+   "title_id": "T0522"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-02074",
+   "arm": "agent",
+   "goal_instance": "U-02074:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T02:16:16.154Z",
+   "deadline": "2026-10-04T02:16:16.154Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-02074@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T01:16:15.232Z",
+   "freshness_s": 176400.5,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-08-04T04:53:11.513000+00:00",
+   "source": "profile:U-02074",
+   "as_of": "2026-09-29T01:16:15.232Z",
+   "freshness_s": 176400.5,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting:be5d28c7-1c53-410c-b94a-c9c5aeaede2d",
+   "as_of": "2026-10-01T02:16:15.741Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:be5d28c7-1c53-410c-b94a-c9c5aeaede2d",
+   "as_of": "2026-10-01T02:16:15.741Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-02074",
+   "as_of": "2026-09-29T01:16:15.232Z",
+   "freshness_s": 176400.5,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-02074",
+   "as_of": "2026-09-29T01:16:15.232Z",
+   "freshness_s": 176400.5,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d3"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d2 (app_setting) vs profile:d3"
+ ]
+}

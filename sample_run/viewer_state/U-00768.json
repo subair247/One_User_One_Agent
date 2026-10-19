@@ -1,0 +1,80 @@
+{
+ "viewer_id": "U-00768",
+ "arm": "agent",
+ "goal": null,
+ "goals": [],
+ "decisions": [
+  "D-01536",
+  "D-01537"
+ ],
+ "actions": [],
+ "pending": [],
+ "seen_triggers": [
+  "dabf89c8-e465-4c46-a06d-0195c873a9d3",
+  "4302b03a-f9ce-4ff3-a3ac-2b694cda9f53"
+ ],
+ "last_session_id": null,
+ "last_trigger": null,
+ "live_page": null,
+ "messages": [],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": []
+ },
+ "outcomes": [],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-00768@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T05:11:45.105Z",
+   "freshness_s": 199291.2,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-05-20T15:56:31.361000+00:00",
+   "source": "profile:U-00768",
+   "as_of": "2026-09-29T05:11:45.105Z",
+   "freshness_s": 199291.2,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": null,
+   "source": "app_setting:4302b03a-f9ce-4ff3-a3ac-2b694cda9f53",
+   "as_of": "2026-10-01T12:33:16.302Z",
+   "freshness_s": 0.0,
+   "rule": "app_dialect 'd7' is missing or not in the catalogue; page cannot be verified"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:4302b03a-f9ce-4ff3-a3ac-2b694cda9f53",
+   "as_of": "2026-10-01T12:33:16.302Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-00768",
+   "as_of": "2026-09-29T05:11:45.105Z",
+   "freshness_s": 199291.2,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-00768",
+   "as_of": "2026-09-29T05:11:45.105Z",
+   "freshness_s": 199291.2,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "campaign_deeplink:d1"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d7 (app_setting) vs campaign_deeplink:d1"
+ ]
+}

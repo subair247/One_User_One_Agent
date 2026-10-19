@@ -1,0 +1,49 @@
+{
+ "counters": {
+  "catalogue_description_with_instructions": 1,
+  "catalogue_slugs_with_language_variants": 514,
+  "catalogue_titles_with_end_of_availability": 103,
+  "profile_users_with_two_rows": 30,
+  "history_offline_buffered_events": 17510,
+  "history_wrong_phone_clock_events": 4319,
+  "history_duplicate_event_ids": 2176,
+  "events_with_missing_app_dialect": 3721,
+  "events_with_dialect_absent_from_catalogue": 3475,
+  "trigger_duplicate_event_ids": 90,
+  "live_duplicate_event_ids": 7,
+  "trigger_app_dialect_unusable": 178,
+  "trigger_deeplink_dialect_differs_from_app_setting": 152,
+  "trigger_offline_buffered_stale": 443,
+  "trigger_user_without_profile_row": 194,
+  "trigger_malformed_deeplink_ignored": 3,
+  "history_users_without_profile_row": 50
+ },
+ "examples": {
+  "catalogue_description_with_instructions": [
+   "T0002"
+  ],
+  "profile_users_with_two_rows": [
+   "U-04215"
+  ],
+  "events_with_dialect_absent_from_catalogue": [
+   "d7",
+   "d7",
+   "d7"
+  ],
+  "trigger_app_dialect_unusable": [
+   "NA",
+   "d7",
+   "d7"
+  ],
+  "trigger_deeplink_dialect_differs_from_app_setting": [
+   "ott://c/cmp034/d6/title/T1976",
+   "ott://c/cmp058/d1/title/T1503",
+   "ott://c/cmp039/d2/title/T0523"
+  ],
+  "trigger_malformed_deeplink_ignored": [
+   "ott://c/cmp059/None/title/T0902",
+   "ott://c/cmp027/None/title/T0921",
+   "ott://c/cmp014/None/title/T1177"
+  ]
+ }
+}

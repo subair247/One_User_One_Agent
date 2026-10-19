@@ -1,0 +1,192 @@
+{
+ "viewer_id": "U-02467",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-02467:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-09-30T19:24:58.709Z",
+  "deadline": "2026-10-03T19:24:58.709Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "diti-kochu-d5",
+   "title_id": "T1906",
+   "next_episode": 1
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series diti-kochu-d5 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:f2bd6e47-a0c6-4023-8378-33f5f95da3e0"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00024",
+  "D-01241"
+ ],
+ "actions": [
+  "A-00019",
+  "A-00020",
+  "A-00578"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "6a1a9ec6-8083-42d6-9e24-0234aaaa2b35",
+  "dbd40985-5453-469f-958a-65fcd5c9a567"
+ ],
+ "last_session_id": "0b658a03-9886-42e1-bfca-7cbe997d405f",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00578",
+  "published_at": "2026-10-01T10:07:04.470Z",
+  "dialect": "d5",
+  "goal_instance": "U-02467:G07:0",
+  "title_ids": [
+   "T1906",
+   "T1177",
+   "T1185",
+   "T1905",
+   "T1179",
+   "T1903",
+   "T1181",
+   "T1191",
+   "T1188",
+   "T1206",
+   "T1226",
+   "T1919",
+   "T1241",
+   "T1938",
+   "T1901",
+   "T1902",
+   "T1907",
+   "T1199",
+   "T1904",
+   "T1200",
+   "T1243",
+   "T1915",
+   "T1914",
+   "T1295",
+   "T1192",
+   "T1213",
+   "T1916",
+   "T1250",
+   "T1264",
+   "T1381",
+   "T1202",
+   "T1215",
+   "T1953",
+   "T1278",
+   "T1909",
+   "T1311",
+   "T1362",
+   "T1288",
+   "T1340",
+   "T1209",
+   "T1300",
+   "T1371",
+   "T1952",
+   "T1974",
+   "T1245",
+   "T1233",
+   "T1930",
+   "T1212",
+   "T1924",
+   "T1378",
+   "T1225",
+   "T1945",
+   "T1970",
+   "T1232"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00020",
+   "type": "push",
+   "send_at": "2026-10-01T06:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-02467:G07:0",
+   "title_id": "T1906"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-02467",
+   "arm": "agent",
+   "goal_instance": "U-02467:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-09-30T19:24:58.709Z",
+   "deadline": "2026-10-03T19:24:58.709Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-02467@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T17:52:41.757Z",
+   "freshness_s": 144862.7,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-08-23T14:19:12.590000+00:00",
+   "source": "profile:U-02467",
+   "as_of": "2026-09-29T17:52:41.757Z",
+   "freshness_s": 144862.7,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting:dbd40985-5453-469f-958a-65fcd5c9a567",
+   "as_of": "2026-10-01T10:07:04.411Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting:dbd40985-5453-469f-958a-65fcd5c9a567",
+   "as_of": "2026-10-01T10:07:04.411Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-02467",
+   "as_of": "2026-09-29T17:52:41.757Z",
+   "freshness_s": 144862.7,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-02467",
+   "as_of": "2026-09-29T17:52:41.757Z",
+   "freshness_s": 144862.7,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d6"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d5 (app_setting) vs profile:d6"
+ ]
+}

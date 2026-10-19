@@ -1,0 +1,82 @@
+{
+ "viewer_id": "U-00427",
+ "arm": "agent",
+ "goal": null,
+ "goals": [],
+ "decisions": [
+  "D-01749",
+  "D-02395",
+  "D-02396"
+ ],
+ "actions": [],
+ "pending": [],
+ "seen_triggers": [
+  "72babf45-122d-450b-b0cd-ff3f33851795",
+  "087b2a21-4f6e-4575-a3ed-f7450bdc6121",
+  "34c3cb73-b9ab-4939-9b2b-4b5cdd81e5cb"
+ ],
+ "last_session_id": null,
+ "last_trigger": null,
+ "live_page": null,
+ "messages": [],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": []
+ },
+ "outcomes": [],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-00427@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T13:49:02.760Z",
+   "freshness_s": 182434.1,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2024-12-05T15:01:56.081000+00:00",
+   "source": "profile:U-00427",
+   "as_of": "2026-09-29T13:49:02.760Z",
+   "freshness_s": 182434.1,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": null,
+   "source": "app_setting:34c3cb73-b9ab-4939-9b2b-4b5cdd81e5cb",
+   "as_of": "2026-10-01T16:29:36.821Z",
+   "freshness_s": 0.0,
+   "rule": "app_dialect None is missing or not in the catalogue; page cannot be verified"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:34c3cb73-b9ab-4939-9b2b-4b5cdd81e5cb",
+   "as_of": "2026-10-01T16:29:36.821Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-00427",
+   "as_of": "2026-09-29T13:49:02.760Z",
+   "freshness_s": 182434.1,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-00427",
+   "as_of": "2026-09-29T13:49:02.760Z",
+   "freshness_s": 182434.1,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d4"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used None (app_setting) vs profile:d4"
+ ]
+}

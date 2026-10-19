@@ -1,0 +1,181 @@
+{
+ "viewer_id": "U-04542",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-04542:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T03:47:26.190Z",
+  "deadline": "2026-10-04T03:47:26.190Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "kavadha-rilo-d5",
+   "title_id": "T1206",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series kavadha-rilo-d5 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:f2af2445-fdca-44a9-b45b-be1596e657f8"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00266",
+  "D-00796",
+  "D-01757",
+  "D-02461"
+ ],
+ "actions": [
+  "A-00157",
+  "A-00158",
+  "A-00336",
+  "A-00850",
+  "A-01206"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "86ce2aaa-3c2f-4962-866f-35a2ec22925c",
+  "9125a46e-cbdf-47de-91a3-9ec8280581b1",
+  "b5c84df7-be32-4472-9573-2fec93fabdce",
+  "a29afa0f-f651-46de-90ba-fe7ac33ebf79"
+ ],
+ "last_session_id": "20c300ac-573f-4588-a430-d11e555579bc",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-01206",
+  "published_at": "2026-10-01T16:47:45.283Z",
+  "dialect": "d5",
+  "goal_instance": "U-04542:G07:0",
+  "title_ids": [
+   "T1206",
+   "T1180",
+   "T1187",
+   "T1186",
+   "T1181",
+   "T1191",
+   "T1188",
+   "T1226",
+   "T1241",
+   "T1295",
+   "T1245",
+   "T1177",
+   "T1179",
+   "T1178",
+   "T1185",
+   "T1182",
+   "T1189",
+   "T1183",
+   "T1228",
+   "T1200",
+   "T1293",
+   "T1192",
+   "T1213",
+   "T1219",
+   "T1250",
+   "T1264",
+   "T1381",
+   "T1202",
+   "T1215",
+   "T1326",
+   "T1278",
+   "T1263",
+   "T1184",
+   "T1211",
+   "T1360",
+   "T1216",
+   "T1342",
+   "T1309",
+   "T1209",
+   "T1339",
+   "T1222"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00158",
+   "type": "push",
+   "send_at": "2026-10-02T03:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-04542:G07:0",
+   "title_id": "T1206"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-04542",
+   "arm": "agent",
+   "goal_instance": "U-04542:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T03:47:26.190Z",
+   "deadline": "2026-10-04T03:47:26.190Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-04542@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T09:10:46.308Z",
+   "freshness_s": 200218.9,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2024-10-16T01:55:55.043000+00:00",
+   "source": "profile:U-04542",
+   "as_of": "2026-09-29T09:10:46.308Z",
+   "freshness_s": 200218.9,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting:a29afa0f-f651-46de-90ba-fe7ac33ebf79",
+   "as_of": "2026-10-01T16:47:45.225Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:a29afa0f-f651-46de-90ba-fe7ac33ebf79",
+   "as_of": "2026-10-01T16:47:45.225Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-04542",
+   "as_of": "2026-09-29T09:10:46.308Z",
+   "freshness_s": 200218.9,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-04542",
+   "as_of": "2026-09-29T09:10:46.308Z",
+   "freshness_s": 200218.9,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": []
+}

@@ -1,0 +1,27 @@
+{
+ "viewer_id": "U-03031",
+ "arm": "agent",
+ "goal": null,
+ "goals": [],
+ "decisions": [
+  "D-01759",
+  "D-01760"
+ ],
+ "actions": [],
+ "pending": [],
+ "seen_triggers": [
+  "7a2256d7-dc5d-48b7-b973-efd56515bcb2",
+  "fa5b502b-34b1-467c-a5fa-04382c6342ed"
+ ],
+ "last_session_id": null,
+ "last_trigger": null,
+ "live_page": null,
+ "messages": [],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": []
+ },
+ "outcomes": [],
+ "facts": {},
+ "conflicts": []
+}

@@ -1,0 +1,185 @@
+{
+ "viewer_id": "U-01720",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-01720:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T07:39:58.627Z",
+  "deadline": "2026-10-04T07:39:58.627Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "bagugu-gigupi-d1",
+   "title_id": "T1504",
+   "next_episode": 5
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series bagugu-gigupi-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:7c3534c3-5fba-48c6-bce9-2a646473970e"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00934",
+  "D-01652"
+ ],
+ "actions": [
+  "A-00423",
+  "A-00424",
+  "A-00801"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "b8c2733e-8fee-4d49-b05c-94aa0dba0b94",
+  "553789ee-7d84-439d-a103-a3e660aa3cfb"
+ ],
+ "last_session_id": "75fbb87a-af81-40c1-965e-786c82aae333",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00801",
+  "published_at": "2026-10-01T13:27:20.293Z",
+  "dialect": "d1",
+  "goal_instance": "U-01720:G07:0",
+  "title_ids": [
+   "T1504",
+   "T0004",
+   "T1505",
+   "T1511",
+   "T0016",
+   "T0067",
+   "T0084",
+   "T0037",
+   "T0044",
+   "T0020",
+   "T0520",
+   "T0002",
+   "T1501",
+   "T0005",
+   "T1502",
+   "T1503",
+   "T1507",
+   "T0015",
+   "T1506",
+   "T0007",
+   "T0012",
+   "T0426",
+   "T1626",
+   "T1647",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T1670",
+   "T0126",
+   "T0419",
+   "T0065",
+   "T1515",
+   "T1674",
+   "T0139",
+   "T1533",
+   "T0466",
+   "T0156",
+   "T0198",
+   "T1520",
+   "T0148",
+   "T1523",
+   "T0018",
+   "T1519",
+   "T0026",
+   "T0027",
+   "T0252",
+   "T1574",
+   "T0422",
+   "T0168",
+   "T0023"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00424",
+   "type": "push",
+   "send_at": "2026-10-01T15:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-01720:G07:0",
+   "title_id": "T1504"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-01720",
+   "arm": "agent",
+   "goal_instance": "U-01720:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T07:39:58.627Z",
+   "deadline": "2026-10-04T07:39:58.627Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-01720@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T08:47:36.083Z",
+   "freshness_s": 189584.2,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2024-11-15T06:00:18.481000+00:00",
+   "source": "profile:U-01720",
+   "as_of": "2026-09-29T08:47:36.083Z",
+   "freshness_s": 189584.2,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:553789ee-7d84-439d-a103-a3e660aa3cfb",
+   "as_of": "2026-10-01T13:27:20.235Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting:553789ee-7d84-439d-a103-a3e660aa3cfb",
+   "as_of": "2026-10-01T13:27:20.235Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-01720",
+   "as_of": "2026-09-29T08:47:36.083Z",
+   "freshness_s": 189584.2,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-01720",
+   "as_of": "2026-09-29T08:47:36.083Z",
+   "freshness_s": 189584.2,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": []
+}

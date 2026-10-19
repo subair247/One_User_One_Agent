@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-04234",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-04234:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T09:16:36.323Z",
+  "deadline": "2026-10-04T09:16:36.323Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "jamo-hasa-d5",
+   "title_id": "T1179",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series jamo-hasa-d5 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:8b7933d2-0978-44c5-ba24-dc04ce8717d7"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01149"
+ ],
+ "actions": [
+  "A-00533",
+  "A-00534"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "31ea42d5-6a82-4efe-8b85-81895b36578f"
+ ],
+ "last_session_id": "1f5f7f11-a411-4266-b2ec-328a405ca377",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00533",
+  "published_at": "2026-10-01T09:16:36.323Z",
+  "dialect": "d5",
+  "goal_instance": "U-04234:G07:0",
+  "title_ids": [
+   "T1179",
+   "T1180",
+   "T1187",
+   "T1186",
+   "T1182",
+   "T1199",
+   "T1183",
+   "T1188",
+   "T1293",
+   "T1243",
+   "T1295",
+   "T1178",
+   "T1185",
+   "T1181",
+   "T1189",
+   "T1191",
+   "T1206",
+   "T1226",
+   "T1228",
+   "T1241",
+   "T1200",
+   "T1192",
+   "T1213",
+   "T1219",
+   "T1250",
+   "T1264",
+   "T1381",
+   "T1202",
+   "T1215",
+   "T1326",
+   "T1278",
+   "T1196",
+   "T1184",
+   "T1221",
+   "T1386",
+   "T1195",
+   "T1194",
+   "T1190",
+   "T1249",
+   "T1251",
+   "T1384",
+   "T1214",
+   "T1198",
+   "T1311",
+   "T1362",
+   "T1288",
+   "T1340",
+   "T1209",
+   "T1300",
+   "T1371",
+   "T1324"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00534",
+   "type": "push",
+   "send_at": "2026-10-02T11:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-04234:G07:0",
+   "title_id": "T1179"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-04234",
+   "arm": "agent",
+   "goal_instance": "U-04234:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T09:16:36.323Z",
+   "deadline": "2026-10-04T09:16:36.323Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-04234@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T01:08:27.565Z",
+   "freshness_s": 202088.3,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2024-12-21T00:44:16.083000+00:00",
+   "source": "profile:U-04234",
+   "as_of": "2026-09-29T01:08:27.565Z",
+   "freshness_s": 202088.3,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting:31ea42d5-6a82-4efe-8b85-81895b36578f",
+   "as_of": "2026-10-01T09:16:35.910Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:31ea42d5-6a82-4efe-8b85-81895b36578f",
+   "as_of": "2026-10-01T09:16:35.910Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-04234",
+   "as_of": "2026-09-29T01:08:27.565Z",
+   "freshness_s": 202088.3,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-04234",
+   "as_of": "2026-09-29T01:08:27.565Z",
+   "freshness_s": 202088.3,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d3"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d5 (app_setting) vs profile:d3"
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "viewer_id": "U-00594",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-00594:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T08:15:03.185Z",
+  "deadline": "2026-10-04T08:15:03.185Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "molo-d2",
+   "title_id": "T0521",
+   "next_episode": 4
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series molo-d2 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:b2f2ac20-c3e4-45ff-9b62-9146de725488"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01011",
+  "D-01808",
+  "D-02541"
+ ],
+ "actions": [
+  "A-00459",
+  "A-00460",
+  "A-00882",
+  "A-01250"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "9fc6ac48-163c-4e6f-9bca-6cb80f14cc39",
+  "51272c55-f008-47a3-ae6a-dbdb38889f59",
+  "0d006414-83cf-41a9-bbb7-bda43c325451"
+ ],
+ "last_session_id": "a89322f3-435a-49b8-825a-f89825e22230",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-01250",
+  "published_at": "2026-10-01T17:12:37.775Z",
+  "dialect": "d2",
+  "goal_instance": "U-00594:G07:0",
+  "title_ids": [
+   "T0521",
+   "T1679",
+   "T0525",
+   "T1683",
+   "T1682",
+   "T0533",
+   "T0534",
+   "T1686",
+   "T1687",
+   "T0548",
+   "T0581",
+   "T1678",
+   "T0526",
+   "T1681",
+   "T0536",
+   "T0531",
+   "T0528",
+   "T0539",
+   "T1688",
+   "T1684",
+   "T1685",
+   "T0535",
+   "T0584",
+   "T0596",
+   "T1707",
+   "T1730",
+   "T0779",
+   "T0829",
+   "T1784",
+   "T0575",
+   "T1755",
+   "T0553",
+   "T1695",
+   "T0900",
+   "T1791",
+   "T0618",
+   "T0639",
+   "T1704",
+   "T0716",
+   "T0560",
+   "T1722",
+   "T0565",
+   "T1709",
+   "T0547",
+   "T0899",
+   "T0567",
+   "T1699",
+   "T0559",
+   "T1696",
+   "T0652",
+   "T0562"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00460",
+   "type": "push",
+   "send_at": "2026-10-01T14:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-00594:G07:0",
+   "title_id": "T0521"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-00594",
+   "arm": "agent",
+   "goal_instance": "U-00594:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T08:15:03.185Z",
+   "deadline": "2026-10-04T08:15:03.185Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-00594@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T03:12:13.593Z",
+   "freshness_s": 223224.1,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-08-07T04:28:33.852000+00:00",
+   "source": "profile:U-00594",
+   "as_of": "2026-09-29T03:12:13.593Z",
+   "freshness_s": 223224.1,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting:0d006414-83cf-41a9-bbb7-bda43c325451",
+   "as_of": "2026-10-01T17:12:37.717Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting:0d006414-83cf-41a9-bbb7-bda43c325451",
+   "as_of": "2026-10-01T17:12:37.717Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-00594",
+   "as_of": "2026-09-29T03:12:13.593Z",
+   "freshness_s": 223224.1,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-00594",
+   "as_of": "2026-09-29T03:12:13.593Z",
+   "freshness_s": 223224.1,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": []
+}

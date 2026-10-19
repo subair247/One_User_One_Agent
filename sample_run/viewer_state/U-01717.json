@@ -1,0 +1,154 @@
+{
+ "viewer_id": "U-01717",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-01717:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T01:39:12.780Z",
+  "deadline": "2026-10-04T01:39:12.780Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "pate-kari-d3",
+   "title_id": "T0909",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series pate-kari-d3 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:9b73c822-4fed-419e-bd49-2f99ab732ef0"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00114",
+  "D-02170"
+ ],
+ "actions": [
+  "A-00068",
+  "A-00069",
+  "A-01077"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "5d175889-979c-4944-b903-0ef26d0063d4",
+  "f563352a-9d1d-4885-a361-ec54d060f088"
+ ],
+ "last_session_id": "e0a830ed-12c2-40b5-9e16-48cdd6cfb69d",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-01077",
+  "published_at": "2026-10-01T15:21:40.437Z",
+  "dialect": "d3",
+  "goal_instance": "U-01717:G07:0",
+  "title_ids": [
+   "T0909",
+   "T0903",
+   "T0907",
+   "T0905",
+   "T0908",
+   "T0901",
+   "T0904",
+   "T0902",
+   "T0914",
+   "T0913",
+   "T0910",
+   "T0906",
+   "T0911"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00069",
+   "type": "push",
+   "send_at": "2026-10-01T08:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-01717:G07:0",
+   "title_id": "T0909"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [
+   "push"
+  ],
+  "notes": [
+   "push token invalid (message_failed): prefer other channels next time",
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-01717",
+   "arm": "agent",
+   "goal_instance": "U-01717:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T01:39:12.780Z",
+   "deadline": "2026-10-04T01:39:12.780Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-01717@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T07:44:48.341Z",
+   "freshness_s": 200212.0,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-05-17T02:53:25.920000+00:00",
+   "source": "profile:U-01717",
+   "as_of": "2026-09-29T07:44:48.341Z",
+   "freshness_s": 200212.0,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting:f563352a-9d1d-4885-a361-ec54d060f088",
+   "as_of": "2026-10-01T15:21:40.379Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:f563352a-9d1d-4885-a361-ec54d060f088",
+   "as_of": "2026-10-01T15:21:40.379Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-01717",
+   "as_of": "2026-09-29T07:44:48.341Z",
+   "freshness_s": 200212.0,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-01717",
+   "as_of": "2026-09-29T07:44:48.341Z",
+   "freshness_s": 200212.0,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d4"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d3 (app_setting) vs profile:d4"
+ ]
+}

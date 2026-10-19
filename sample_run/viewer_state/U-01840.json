@@ -1,0 +1,184 @@
+{
+ "viewer_id": "U-01840",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-01840:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T03:03:47.455Z",
+  "deadline": "2026-10-04T03:03:47.455Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "hama-chudibha-d1",
+   "title_id": "T0002",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series hama-chudibha-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:20773028-406c-4748-952f-7fb4e8705f99"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00207",
+  "D-00218",
+  "D-01018"
+ ],
+ "actions": [
+  "A-00126",
+  "A-00127",
+  "A-00464"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "0c025128-dcd6-45f9-b63d-29a47ab64f8d",
+  "005e567e-ee3b-4715-829d-7d291739e188",
+  "d5080773-8e87-49f4-bd51-24bb20137c98"
+ ],
+ "last_session_id": "08e06c04-e2fe-43c7-b70a-ff60a69a4120",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00464",
+  "published_at": "2026-10-01T08:17:58.553Z",
+  "dialect": "d1",
+  "goal_instance": "U-01840:G07:0",
+  "title_ids": [
+   "T0002",
+   "T0008",
+   "T0014",
+   "T0015",
+   "T0011",
+   "T0029",
+   "T0034",
+   "T0017",
+   "T0070",
+   "T0024",
+   "T0018",
+   "T0003",
+   "T0005",
+   "T0009",
+   "T0004",
+   "T0006",
+   "T0010",
+   "T0013",
+   "T0007",
+   "T0012",
+   "T0038",
+   "T0426",
+   "T0382",
+   "T0435",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T0511",
+   "T0126",
+   "T0419",
+   "T0058",
+   "T0026",
+   "T0027",
+   "T0252",
+   "T0229",
+   "T0422",
+   "T0168",
+   "T0023",
+   "T0073",
+   "T0505"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00127",
+   "type": "push",
+   "send_at": "2026-10-01T14:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-01840:G07:0",
+   "title_id": "T0002"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [
+   "push"
+  ],
+  "notes": [
+   "push token invalid (message_failed): prefer other channels next time",
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-01840",
+   "arm": "agent",
+   "goal_instance": "U-01840:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T03:03:47.455Z",
+   "deadline": "2026-10-04T03:03:47.455Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-01840@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T01:51:22.601Z",
+   "freshness_s": 195995.9,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-09-22T19:12:01.587000+00:00",
+   "source": "profile:U-01840",
+   "as_of": "2026-09-29T01:51:22.601Z",
+   "freshness_s": 195995.9,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:d5080773-8e87-49f4-bd51-24bb20137c98",
+   "as_of": "2026-10-01T08:17:58.495Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:d5080773-8e87-49f4-bd51-24bb20137c98",
+   "as_of": "2026-10-01T08:17:58.495Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-01840",
+   "as_of": "2026-09-29T01:51:22.601Z",
+   "freshness_s": 195995.9,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-01840",
+   "as_of": "2026-09-29T01:51:22.601Z",
+   "freshness_s": 195995.9,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d4"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d1 (app_setting) vs profile:d4"
+ ]
+}

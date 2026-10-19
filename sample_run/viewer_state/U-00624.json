@@ -1,0 +1,188 @@
+{
+ "viewer_id": "U-00624",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-00624:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T07:57:34.242Z",
+  "deadline": "2026-10-04T07:57:34.242Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "molo-d2",
+   "title_id": "T0521",
+   "next_episode": 5
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series molo-d2 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:92d3f3fa-3f5c-40c5-b139-7a404865961a"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00976",
+  "D-00977"
+ ],
+ "actions": [
+  "A-00441",
+  "A-00442"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "8c8d7a84-d839-46eb-b668-bae91bada029",
+  "c892d3a9-44e8-4077-90a0-3373164dfdff"
+ ],
+ "last_session_id": "61f4118c-e019-42cf-8759-fe7e6609c1c3",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00441",
+  "published_at": "2026-10-01T07:57:34.242Z",
+  "dialect": "d2",
+  "goal_instance": "U-00624:G07:0",
+  "title_ids": [
+   "T0521",
+   "T0526",
+   "T0528",
+   "T0530",
+   "T0534",
+   "T0550",
+   "T0548",
+   "T0556",
+   "T0568",
+   "T0565",
+   "T0620",
+   "T0523",
+   "T0524",
+   "T0529",
+   "T0525",
+   "T0537",
+   "T0536",
+   "T0531",
+   "T0539",
+   "T0538",
+   "T0554",
+   "T0535",
+   "T0584",
+   "T0596",
+   "T0616",
+   "T0679",
+   "T0779",
+   "T0829",
+   "T0832",
+   "T0575",
+   "T0746",
+   "T0547",
+   "T0899",
+   "T0567",
+   "T0590",
+   "T0559",
+   "T0580",
+   "T0848",
+   "T0652",
+   "T0562",
+   "T0716",
+   "T0546",
+   "T0581",
+   "T0553",
+   "T0578",
+   "T0900",
+   "T0618",
+   "T0639",
+   "T0604",
+   "T0560",
+   "T0665"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00442",
+   "type": "push",
+   "send_at": "2026-10-02T06:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-00624:G07:0",
+   "title_id": "T0521"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged succeeded (success event observed in window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-00624",
+   "arm": "agent",
+   "goal_instance": "U-00624:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T07:57:34.242Z",
+   "deadline": "2026-10-04T07:57:34.242Z",
+   "status": "succeeded",
+   "reason": "success event observed in window",
+   "signal_event_id": "oua-004142"
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-00624@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T14:48:02.120Z",
+   "freshness_s": 148175.6,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-01-27T00:17:29.268000+00:00",
+   "source": "profile:U-00624",
+   "as_of": "2026-09-29T14:48:02.120Z",
+   "freshness_s": 148175.6,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting:c892d3a9-44e8-4077-90a0-3373164dfdff",
+   "as_of": "2026-10-01T07:57:37.691Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:c892d3a9-44e8-4077-90a0-3373164dfdff",
+   "as_of": "2026-10-01T07:57:37.691Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-00624",
+   "as_of": "2026-09-29T14:48:02.120Z",
+   "freshness_s": 148175.6,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-00624",
+   "as_of": "2026-09-29T14:48:02.120Z",
+   "freshness_s": 148175.6,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d6"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d2 (app_setting) vs profile:d6"
+ ]
+}

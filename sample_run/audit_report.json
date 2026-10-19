@@ -1,0 +1,10 @@
+{
+  "actions_audited": 1298,
+  "violations": {},
+  "violation_examples": [],
+  "holdout_actions": 0,
+  "decisions_over_60s": 0,
+  "decisions_total": 2688,
+  "decisions_missing_fields": 0,
+  "passed": true
+}

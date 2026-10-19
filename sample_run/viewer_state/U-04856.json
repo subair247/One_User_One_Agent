@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-04856",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-04856:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T13:40:10.301Z",
+  "deadline": "2026-10-04T13:40:10.301Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "rasuya-moni-d6",
+   "title_id": "T1976",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series rasuya-moni-d6 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:e853f700-a52b-4984-bba6-cd447ab35346"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01693",
+  "D-01761"
+ ],
+ "actions": [
+  "A-00821",
+  "A-00822"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "26149df4-ff5a-4295-9c8c-9b10e52fc964",
+  "38c403f6-f7db-4f02-a19f-654a5869a44c"
+ ],
+ "last_session_id": "5a47e82c-3db5-41ef-80a6-dc042366f57f",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00821",
+  "published_at": "2026-10-01T13:40:10.301Z",
+  "dialect": "d6",
+  "goal_instance": "U-04856:G07:0",
+  "title_ids": [
+   "T1976",
+   "T1979",
+   "T1984",
+   "T1500",
+   "T1987",
+   "T1419",
+   "T2014",
+   "T1402",
+   "T2002",
+   "T2003",
+   "T1998",
+   "T1978",
+   "T1391",
+   "T1390",
+   "T1393",
+   "T1980",
+   "T1398",
+   "T1985",
+   "T1395",
+   "T1397",
+   "T1406",
+   "T1421",
+   "T1461",
+   "T2004",
+   "T2012",
+   "T2009",
+   "T1472",
+   "T1456",
+   "T1486",
+   "T1416",
+   "T1459",
+   "T1495",
+   "T1994",
+   "T1432",
+   "T1403",
+   "T1454",
+   "T1481",
+   "T1476",
+   "T2001",
+   "T1428",
+   "T1986",
+   "T1482",
+   "T1444",
+   "T1497",
+   "T1477",
+   "T1487",
+   "T1464",
+   "T1441",
+   "T1996"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00822",
+   "type": "push",
+   "send_at": "2026-10-02T07:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-04856:G07:0",
+   "title_id": "T1976"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-04856",
+   "arm": "agent",
+   "goal_instance": "U-04856:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T13:40:10.301Z",
+   "deadline": "2026-10-04T13:40:10.301Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-04856@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T04:19:46.605Z",
+   "freshness_s": 207630.3,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-10-27T22:43:49.469000+00:00",
+   "source": "profile:U-04856",
+   "as_of": "2026-09-29T04:19:46.605Z",
+   "freshness_s": 207630.3,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting:38c403f6-f7db-4f02-a19f-654a5869a44c",
+   "as_of": "2026-10-01T14:00:16.889Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting:38c403f6-f7db-4f02-a19f-654a5869a44c",
+   "as_of": "2026-10-01T14:00:16.889Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-04856",
+   "as_of": "2026-09-29T04:19:46.605Z",
+   "freshness_s": 207630.3,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-04856",
+   "as_of": "2026-09-29T04:19:46.605Z",
+   "freshness_s": 207630.3,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d4"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d6 (app_setting) vs profile:d4"
+ ]
+}

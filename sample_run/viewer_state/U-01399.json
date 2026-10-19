@@ -1,0 +1,187 @@
+{
+ "viewer_id": "U-01399",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-01399:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T06:17:49.234Z",
+  "deadline": "2026-10-04T06:17:49.234Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "gubava-gihaya-d5",
+   "title_id": "T1177",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series gubava-gihaya-d5 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:ba2a197e-6a27-46ca-b8bd-8fe28f275e36"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00758",
+  "D-00776",
+  "D-01857"
+ ],
+ "actions": [
+  "A-00311",
+  "A-00312",
+  "A-00908"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "5340cde3-671c-4778-82dd-f47520327068",
+  "601a4280-95ba-41c1-8afc-daea91538a1b",
+  "76f186ab-4c36-49df-92c5-2a4faab76ff0"
+ ],
+ "last_session_id": "de8a52c1-6485-4cc5-9179-12ec4b505493",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00908",
+  "published_at": "2026-10-01T14:28:14.816Z",
+  "dialect": "d5",
+  "goal_instance": "U-01399:G07:0",
+  "title_ids": [
+   "T1177",
+   "T1180",
+   "T1187",
+   "T1191",
+   "T1183",
+   "T1206",
+   "T1226",
+   "T1241",
+   "T1293",
+   "T1243",
+   "T1295",
+   "T1178",
+   "T1186",
+   "T1185",
+   "T1181",
+   "T1189",
+   "T1228",
+   "T1200",
+   "T1214",
+   "T1210",
+   "T1245",
+   "T1192",
+   "T1213",
+   "T1219",
+   "T1250",
+   "T1264",
+   "T1381",
+   "T1202",
+   "T1215",
+   "T1326",
+   "T1278",
+   "T1261",
+   "T1310",
+   "T1201",
+   "T1346",
+   "T1360",
+   "T1251",
+   "T1344",
+   "T1288",
+   "T1286",
+   "T1365",
+   "T1198",
+   "T1311",
+   "T1362",
+   "T1340",
+   "T1209",
+   "T1300",
+   "T1371",
+   "T1324",
+   "T1385",
+   "T1382"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00312",
+   "type": "push",
+   "send_at": "2026-10-02T06:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-01399:G07:0",
+   "title_id": "T1177"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-01399",
+   "arm": "agent",
+   "goal_instance": "U-01399:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T06:17:49.234Z",
+   "deadline": "2026-10-04T06:17:49.234Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-01399@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T03:03:18.963Z",
+   "freshness_s": 213895.8,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-12-02T06:38:02.375000+00:00",
+   "source": "profile:U-01399",
+   "as_of": "2026-09-29T03:03:18.963Z",
+   "freshness_s": 213895.8,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting:76f186ab-4c36-49df-92c5-2a4faab76ff0",
+   "as_of": "2026-10-01T14:28:14.759Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:76f186ab-4c36-49df-92c5-2a4faab76ff0",
+   "as_of": "2026-10-01T14:28:14.759Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-01399",
+   "as_of": "2026-09-29T03:03:18.963Z",
+   "freshness_s": 213895.8,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-01399",
+   "as_of": "2026-09-29T03:03:18.963Z",
+   "freshness_s": 213895.8,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": []
+}

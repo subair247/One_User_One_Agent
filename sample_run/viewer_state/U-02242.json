@@ -1,0 +1,189 @@
+{
+ "viewer_id": "U-02242",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-02242:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T12:22:58.976Z",
+  "deadline": "2026-10-04T12:22:58.976Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "guka-kosusa-d2",
+   "title_id": "T0522",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series guka-kosusa-d2 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:2e0ccc8f-f015-42c2-87a8-fb20c79620d4"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01525"
+ ],
+ "actions": [
+  "A-00735",
+  "A-00736"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "fd333dac-7475-40dc-82c8-b989c6f1c806"
+ ],
+ "last_session_id": "02aba39a-7a7f-422d-b8fd-1cdb7d4aa12c",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00735",
+  "published_at": "2026-10-01T12:22:58.976Z",
+  "dialect": "d2",
+  "goal_instance": "U-02242:G07:0",
+  "title_ids": [
+   "T0522",
+   "T0526",
+   "T0528",
+   "T1683",
+   "T1680",
+   "T0533",
+   "T0534",
+   "T1687",
+   "T0548",
+   "T0556",
+   "T0568",
+   "T1677",
+   "T1679",
+   "T0525",
+   "T1681",
+   "T0536",
+   "T0531",
+   "T0539",
+   "T1682",
+   "T1688",
+   "T1684",
+   "T0535",
+   "T0584",
+   "T0596",
+   "T1707",
+   "T1730",
+   "T0779",
+   "T0829",
+   "T1784",
+   "T0575",
+   "T1755",
+   "T0565",
+   "T1709",
+   "T0547",
+   "T0899",
+   "T0567",
+   "T1699",
+   "T0559",
+   "T1696",
+   "T1791",
+   "T0652",
+   "T1686",
+   "T0581",
+   "T0553",
+   "T1695",
+   "T0900",
+   "T0618",
+   "T0639",
+   "T1704",
+   "T0716",
+   "T0560"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00736",
+   "type": "push",
+   "send_at": "2026-10-02T12:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-02242:G07:0",
+   "title_id": "T0522"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [
+   "push"
+  ],
+  "notes": [
+   "push token invalid (message_failed): prefer other channels next time",
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-02242",
+   "arm": "agent",
+   "goal_instance": "U-02242:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T12:22:58.976Z",
+   "deadline": "2026-10-04T12:22:58.976Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-02242@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T07:46:03.177Z",
+   "freshness_s": 189415.4,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-07-10T12:47:46.419000+00:00",
+   "source": "profile:U-02242",
+   "as_of": "2026-09-29T07:46:03.177Z",
+   "freshness_s": 189415.4,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting:fd333dac-7475-40dc-82c8-b989c6f1c806",
+   "as_of": "2026-10-01T12:22:58.562Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting:fd333dac-7475-40dc-82c8-b989c6f1c806",
+   "as_of": "2026-10-01T12:22:58.562Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-02242",
+   "as_of": "2026-09-29T07:46:03.177Z",
+   "freshness_s": 189415.4,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-02242",
+   "as_of": "2026-09-29T07:46:03.177Z",
+   "freshness_s": 189415.4,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d4"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d2 (app_setting) vs profile:d4"
+ ]
+}

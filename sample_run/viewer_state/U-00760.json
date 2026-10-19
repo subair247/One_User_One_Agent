@@ -1,0 +1,188 @@
+{
+ "viewer_id": "U-00760",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-00760:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T05:30:51.618Z",
+  "deadline": "2026-10-04T05:30:51.618Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "gima-bhadaba-d1",
+   "title_id": "T1502",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series gima-bhadaba-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:928668e4-b617-47f0-9e57-6242440485df"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00661"
+ ],
+ "actions": [
+  "A-00253",
+  "A-00254"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "e089549e-6300-41d2-a339-6b5616d437d7"
+ ],
+ "last_session_id": "f0099cd9-f15a-4499-96e5-e9d7aa5897d5",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00253",
+  "published_at": "2026-10-01T05:30:51.618Z",
+  "dialect": "d1",
+  "goal_instance": "U-00760:G07:0",
+  "title_ids": [
+   "T1502",
+   "T0005",
+   "T1512",
+   "T0002",
+   "T1505",
+   "T1507",
+   "T0007",
+   "T0012",
+   "T1510",
+   "T0016",
+   "T0025",
+   "T1517",
+   "T0520",
+   "T0030",
+   "T1504",
+   "T0004",
+   "T1503",
+   "T0015",
+   "T1506",
+   "T0013",
+   "T0034",
+   "T1511",
+   "T1508",
+   "T1523",
+   "T0426",
+   "T1626",
+   "T1647",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T1670",
+   "T0126",
+   "T0419",
+   "T0252",
+   "T1521",
+   "T1574",
+   "T0352",
+   "T0053",
+   "T1546",
+   "T1562",
+   "T0117",
+   "T0098",
+   "T0111",
+   "T0018",
+   "T1519",
+   "T0026",
+   "T0027",
+   "T0422",
+   "T0168",
+   "T0023",
+   "T1526",
+   "T1668",
+   "T0031"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00254",
+   "type": "push",
+   "send_at": "2026-10-01T12:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-00760:G07:0",
+   "title_id": "T1502"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [
+   "push"
+  ],
+  "notes": [
+   "push token invalid (message_failed): prefer other channels next time",
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-00760",
+   "arm": "agent",
+   "goal_instance": "U-00760:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T05:30:51.618Z",
+   "deadline": "2026-10-04T05:30:51.618Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "lapsed",
+   "source": "profile:U-00760@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T14:42:06.497Z",
+   "freshness_s": 139724.7,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2024-10-21T17:15:38.330000+00:00",
+   "source": "profile:U-00760",
+   "as_of": "2026-09-29T14:42:06.497Z",
+   "freshness_s": 139724.7,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:e089549e-6300-41d2-a339-6b5616d437d7",
+   "as_of": "2026-10-01T05:30:51.204Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting:e089549e-6300-41d2-a339-6b5616d437d7",
+   "as_of": "2026-10-01T05:30:51.204Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-00760",
+   "as_of": "2026-09-29T14:42:06.497Z",
+   "freshness_s": 139724.7,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-00760",
+   "as_of": "2026-09-29T14:42:06.497Z",
+   "freshness_s": 139724.7,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": []
+}

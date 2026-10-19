@@ -1,0 +1,172 @@
+{
+ "viewer_id": "U-02939",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-02939:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T12:27:24.618Z",
+  "deadline": "2026-10-04T12:27:24.618Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "tidha-dakachu-d1",
+   "title_id": "T0005",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series tidha-dakachu-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:356b52e9-6796-4507-af12-c1933382bc5e"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01530"
+ ],
+ "actions": [
+  "A-00738",
+  "A-00739"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "b3c994eb-a362-4255-9d3d-b1a1b8615cc9"
+ ],
+ "last_session_id": "8901e053-a091-4605-8821-b62798e00996",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00738",
+  "published_at": "2026-10-01T12:27:24.618Z",
+  "dialect": "d1",
+  "goal_instance": "U-02939:G07:0",
+  "title_ids": [
+   "T0005",
+   "T0003",
+   "T0010",
+   "T0014",
+   "T0007",
+   "T0012",
+   "T0029",
+   "T0038",
+   "T0016",
+   "T0025",
+   "T0049",
+   "T0002",
+   "T0009",
+   "T0004",
+   "T0006",
+   "T0008",
+   "T0015",
+   "T0011",
+   "T0013",
+   "T0034",
+   "T0035",
+   "T0426",
+   "T0382",
+   "T0435",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T0511",
+   "T0126",
+   "T0419",
+   "T0252",
+   "T0061",
+   "T0229",
+   "T0352",
+   "T0053",
+   "T0142",
+   "T0182",
+   "T0117",
+   "T0098",
+   "T0068"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00739",
+   "type": "push",
+   "send_at": "2026-10-02T05:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-02939:G07:0",
+   "title_id": "T0005"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-02939",
+   "arm": "agent",
+   "goal_instance": "U-02939:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T12:27:24.618Z",
+   "deadline": "2026-10-04T12:27:24.618Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-02939@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T01:46:57.142Z",
+   "freshness_s": 211227.1,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-02-28T04:02:20.567000+00:00",
+   "source": "profile:U-02939",
+   "as_of": "2026-09-29T01:46:57.142Z",
+   "freshness_s": 211227.1,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:b3c994eb-a362-4255-9d3d-b1a1b8615cc9",
+   "as_of": "2026-10-01T12:27:24.204Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:b3c994eb-a362-4255-9d3d-b1a1b8615cc9",
+   "as_of": "2026-10-01T12:27:24.204Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-02939",
+   "as_of": "2026-09-29T01:46:57.142Z",
+   "freshness_s": 211227.1,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-02939",
+   "as_of": "2026-09-29T01:46:57.142Z",
+   "freshness_s": 211227.1,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": []
+}

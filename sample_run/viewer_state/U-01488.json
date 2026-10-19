@@ -1,0 +1,78 @@
+{
+ "viewer_id": "U-01488",
+ "arm": "agent",
+ "goal": null,
+ "goals": [],
+ "decisions": [
+  "D-00931"
+ ],
+ "actions": [],
+ "pending": [],
+ "seen_triggers": [
+  "08f82cc2-1eb8-4a62-b3ed-b800f1361dda"
+ ],
+ "last_session_id": null,
+ "last_trigger": null,
+ "live_page": null,
+ "messages": [],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": []
+ },
+ "outcomes": [],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-01488@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T15:16:52.442Z",
+   "freshness_s": 145325.4,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-10-18T10:01:33.107000+00:00",
+   "source": "profile:U-01488",
+   "as_of": "2026-09-29T15:16:52.442Z",
+   "freshness_s": 145325.4,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": null,
+   "source": "app_setting:08f82cc2-1eb8-4a62-b3ed-b800f1361dda",
+   "as_of": "2026-10-01T07:38:57.868Z",
+   "freshness_s": 0.0,
+   "rule": "app_dialect None is missing or not in the catalogue; page cannot be verified"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:08f82cc2-1eb8-4a62-b3ed-b800f1361dda",
+   "as_of": "2026-10-01T07:38:57.868Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-01488",
+   "as_of": "2026-09-29T15:16:52.442Z",
+   "freshness_s": 145325.4,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-01488",
+   "as_of": "2026-09-29T15:16:52.442Z",
+   "freshness_s": 145325.4,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d5"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used None (app_setting) vs profile:d5"
+ ]
+}

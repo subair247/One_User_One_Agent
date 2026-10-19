@@ -1,0 +1,185 @@
+{
+ "viewer_id": "U-03796",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-03796:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T04:47:55.501Z",
+  "deadline": "2026-10-04T04:47:55.501Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "lola-rodira-d2",
+   "title_id": "T0569",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series lola-rodira-d2 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:263d66b2-a9fd-409a-9060-65afb4046d4e"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00567",
+  "D-01366"
+ ],
+ "actions": [
+  "A-00205",
+  "A-00206",
+  "A-00656"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "06c96bf4-8724-422a-9154-a6830be9163d",
+  "33328c60-188d-48ed-b07d-f6f81587419b"
+ ],
+ "last_session_id": "ce892cac-78bf-419b-9e56-33eb5f725452",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00656",
+  "published_at": "2026-10-01T11:09:56.978Z",
+  "dialect": "d2",
+  "goal_instance": "U-03796:G07:0",
+  "title_ids": [
+   "T0569",
+   "T0529",
+   "T0525",
+   "T0540",
+   "T0538",
+   "T0530",
+   "T0533",
+   "T0534",
+   "T0546",
+   "T0550",
+   "T0548",
+   "T0523",
+   "T0524",
+   "T0526",
+   "T0537",
+   "T0536",
+   "T0531",
+   "T0528",
+   "T0539",
+   "T0554",
+   "T0542",
+   "T0535",
+   "T0584",
+   "T0596",
+   "T0616",
+   "T0679",
+   "T0779",
+   "T0829",
+   "T0832",
+   "T0575",
+   "T0746",
+   "T0556",
+   "T0568",
+   "T0566",
+   "T0607",
+   "T0626",
+   "T0665",
+   "T0675",
+   "T0637",
+   "T0701",
+   "T0612",
+   "T0543",
+   "T0551",
+   "T0676",
+   "T0660",
+   "T0557",
+   "T0900",
+   "T0564",
+   "T0613",
+   "T0641",
+   "T0677"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00206",
+   "type": "push",
+   "send_at": "2026-10-01T15:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-03796:G07:0",
+   "title_id": "T0569"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-03796",
+   "arm": "agent",
+   "goal_instance": "U-03796:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T04:47:55.501Z",
+   "deadline": "2026-10-04T04:47:55.501Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-03796@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T04:23:36.041Z",
+   "freshness_s": 197180.9,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-04-22T09:19:05.632000+00:00",
+   "source": "profile:U-03796",
+   "as_of": "2026-09-29T04:23:36.041Z",
+   "freshness_s": 197180.9,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting:33328c60-188d-48ed-b07d-f6f81587419b",
+   "as_of": "2026-10-01T11:09:56.920Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:33328c60-188d-48ed-b07d-f6f81587419b",
+   "as_of": "2026-10-01T11:09:56.920Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-03796",
+   "as_of": "2026-09-29T04:23:36.041Z",
+   "freshness_s": 197180.9,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-03796",
+   "as_of": "2026-09-29T04:23:36.041Z",
+   "freshness_s": 197180.9,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": []
+}

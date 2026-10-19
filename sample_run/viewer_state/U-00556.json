@@ -1,0 +1,181 @@
+{
+ "viewer_id": "U-00556",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-00556:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T10:46:23.106Z",
+  "deadline": "2026-10-04T10:46:23.106Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "rigu-dhadi-d2",
+   "title_id": "T0526",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series rigu-dhadi-d2 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:a9052f65-7c7d-4ff7-a6c9-362a5feb113e"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01316",
+  "D-01317"
+ ],
+ "actions": [
+  "A-00630",
+  "A-00631"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "0d70ce72-0668-49e9-94dd-0c20680d65f2",
+  "027ecff8-2009-4657-bc71-1b580531265e"
+ ],
+ "last_session_id": "48358d04-defc-48aa-bf6d-41a16aeb6f42",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00630",
+  "published_at": "2026-10-01T10:46:23.106Z",
+  "dialect": "d2",
+  "goal_instance": "U-00556:G07:0",
+  "title_ids": [
+   "T0526",
+   "T0521",
+   "T0537",
+   "T0528",
+   "T0540",
+   "T0539",
+   "T0534",
+   "T0543",
+   "T0541",
+   "T0585",
+   "T0565",
+   "T0522",
+   "T0523",
+   "T0524",
+   "T0529",
+   "T0525",
+   "T0536",
+   "T0531",
+   "T0538",
+   "T0554",
+   "T0530",
+   "T0535",
+   "T0584",
+   "T0596",
+   "T0616",
+   "T0679",
+   "T0779",
+   "T0829",
+   "T0832",
+   "T0575",
+   "T0746",
+   "T0620",
+   "T0545",
+   "T0583",
+   "T0559",
+   "T0570",
+   "T0557",
+   "T0593",
+   "T0638",
+   "T0618",
+   "T0604"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00631",
+   "type": "push",
+   "send_at": "2026-10-02T08:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-00556:G07:0",
+   "title_id": "T0526"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [
+   "push"
+  ],
+  "notes": [
+   "push token invalid (message_failed): prefer other channels next time",
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-00556",
+   "arm": "agent",
+   "goal_instance": "U-00556:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T10:46:23.106Z",
+   "deadline": "2026-10-04T10:46:23.106Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-00556@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T06:40:00.107Z",
+   "freshness_s": 187588.2,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-02-26T13:00:00.954000+00:00",
+   "source": "profile:U-00556",
+   "as_of": "2026-09-29T06:40:00.107Z",
+   "freshness_s": 187588.2,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting:027ecff8-2009-4657-bc71-1b580531265e",
+   "as_of": "2026-10-01T10:46:28.301Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:027ecff8-2009-4657-bc71-1b580531265e",
+   "as_of": "2026-10-01T10:46:28.301Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-00556",
+   "as_of": "2026-09-29T06:40:00.107Z",
+   "freshness_s": 187588.2,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-00556",
+   "as_of": "2026-09-29T06:40:00.107Z",
+   "freshness_s": 187588.2,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d6"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d2 (app_setting) vs profile:d6"
+ ]
+}

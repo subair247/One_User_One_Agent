@@ -1,0 +1,183 @@
+{
+ "viewer_id": "U-04103",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-04103:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T03:53:47.297Z",
+  "deadline": "2026-10-04T03:53:47.297Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "kova-sako-d5",
+   "title_id": "T1902",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series kova-sako-d5 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:8695ef38-9dab-4205-8043-d8614c748507"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00275",
+  "D-01224",
+  "D-01913"
+ ],
+ "actions": [
+  "A-00163",
+  "A-00164",
+  "A-00572",
+  "A-00945"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "40d037bc-4e1e-45ea-9d62-b29d11a21409",
+  "ab85a227-c8cf-46a8-8de6-246a69b9cc8b",
+  "01f35ae8-cc8e-4ea2-84d6-fdf46a17af8f"
+ ],
+ "last_session_id": "804f30c8-4c13-4bc1-bdbb-b677d11d0869",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00945",
+  "published_at": "2026-10-01T14:45:41.813Z",
+  "dialect": "d5",
+  "goal_instance": "U-04103:G07:0",
+  "title_ids": [
+   "T1180",
+   "T1177",
+   "T1186",
+   "T1182",
+   "T1181",
+   "T1191",
+   "T1183",
+   "T1188",
+   "T1206",
+   "T1293",
+   "T1243",
+   "T1179",
+   "T1178",
+   "T1187",
+   "T1185",
+   "T1189",
+   "T1226",
+   "T1228",
+   "T1241",
+   "T1200",
+   "T1214",
+   "T1192",
+   "T1213",
+   "T1219",
+   "T1250",
+   "T1264",
+   "T1381",
+   "T1202",
+   "T1215",
+   "T1326",
+   "T1278",
+   "T1295",
+   "T1245",
+   "T1263",
+   "T1184",
+   "T1211",
+   "T1360",
+   "T1216",
+   "T1342",
+   "T1309",
+   "T1209"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00164",
+   "type": "push",
+   "send_at": "2026-10-02T06:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-04103:G07:0",
+   "title_id": "T1180"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-04103",
+   "arm": "agent",
+   "goal_instance": "U-04103:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T03:53:47.297Z",
+   "deadline": "2026-10-04T03:53:47.297Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-04103@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T08:09:08.822Z",
+   "freshness_s": 196592.9,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2024-10-12T16:16:35.517000+00:00",
+   "source": "profile:U-04103",
+   "as_of": "2026-09-29T08:09:08.822Z",
+   "freshness_s": 196592.9,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting:01f35ae8-cc8e-4ea2-84d6-fdf46a17af8f",
+   "as_of": "2026-10-01T14:45:41.756Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:01f35ae8-cc8e-4ea2-84d6-fdf46a17af8f",
+   "as_of": "2026-10-01T14:45:41.756Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-04103",
+   "as_of": "2026-09-29T08:09:08.822Z",
+   "freshness_s": 196592.9,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-04103",
+   "as_of": "2026-09-29T08:09:08.822Z",
+   "freshness_s": 196592.9,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d1",
+    "campaign_deeplink:d3"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d5 (app_setting) vs profile:d1, campaign_deeplink:d3"
+ ]
+}

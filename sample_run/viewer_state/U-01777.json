@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-01777",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-01777:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T16:14:28.168Z",
+  "deadline": "2026-10-04T16:14:28.168Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "nina-d5",
+   "title_id": "T1186",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series nina-d5 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:3d65226d-23c6-4707-8330-952bed43ee39"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00396",
+  "D-02348",
+  "D-02349"
+ ],
+ "actions": [
+  "A-01161",
+  "A-01162"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "a19381e9-70d8-47c9-934b-d10e10551f58",
+  "146165d0-97d8-424b-92e3-05730a4c2f94",
+  "3e7616a1-5ec7-4e9f-9450-407599f79ecb"
+ ],
+ "last_session_id": "5fb5c531-4e3d-48ab-89f8-75b191c7c369",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-01161",
+  "published_at": "2026-10-01T16:14:28.168Z",
+  "dialect": "d5",
+  "goal_instance": "U-01777:G07:0",
+  "title_ids": [
+   "T1186",
+   "T1187",
+   "T1189",
+   "T1191",
+   "T1188",
+   "T1206",
+   "T1226",
+   "T1241",
+   "T1214",
+   "T1196",
+   "T1234",
+   "T1177",
+   "T1179",
+   "T1178",
+   "T1185",
+   "T1182",
+   "T1181",
+   "T1183",
+   "T1228",
+   "T1200",
+   "T1293",
+   "T1192",
+   "T1213",
+   "T1219",
+   "T1250",
+   "T1264",
+   "T1381",
+   "T1202",
+   "T1215",
+   "T1326",
+   "T1278",
+   "T1386",
+   "T1233",
+   "T1310",
+   "T1211",
+   "T1204",
+   "T1230",
+   "T1346",
+   "T1383",
+   "T1384",
+   "T1311",
+   "T1295",
+   "T1245",
+   "T1263",
+   "T1184",
+   "T1360",
+   "T1216",
+   "T1342",
+   "T1309",
+   "T1209",
+   "T1339"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-01162",
+   "type": "push",
+   "send_at": "2026-10-02T15:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-01777:G07:0",
+   "title_id": "T1186"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-01777",
+   "arm": "agent",
+   "goal_instance": "U-01777:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T16:14:28.168Z",
+   "deadline": "2026-10-04T16:14:28.168Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-01777@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T11:14:55.460Z",
+   "freshness_s": 190778.2,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-04-03T19:52:03.414000+00:00",
+   "source": "profile:U-01777",
+   "as_of": "2026-09-29T11:14:55.460Z",
+   "freshness_s": 190778.2,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting:3e7616a1-5ec7-4e9f-9450-407599f79ecb",
+   "as_of": "2026-10-01T16:14:33.697Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:3e7616a1-5ec7-4e9f-9450-407599f79ecb",
+   "as_of": "2026-10-01T16:14:33.697Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-01777",
+   "as_of": "2026-09-29T11:14:55.460Z",
+   "freshness_s": 190778.2,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-01777",
+   "as_of": "2026-09-29T11:14:55.460Z",
+   "freshness_s": 190778.2,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": []
+}

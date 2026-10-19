@@ -1,0 +1,185 @@
+{
+ "viewer_id": "U-02617",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-02617:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T10:39:20.822Z",
+  "deadline": "2026-10-04T10:39:20.822Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "gima-bhadaba-d1",
+   "title_id": "T1502",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series gima-bhadaba-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:9129b45e-13e6-4e2f-8923-45555188c88f"
+  ],
+  "source": "rules"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01300"
+ ],
+ "actions": [
+  "A-00617",
+  "A-00618"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "f1a5f028-934e-4ff8-a334-4e5e9b316ed3"
+ ],
+ "last_session_id": "dd7f95a3-6f88-445d-9926-4a8c65173971",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00617",
+  "published_at": "2026-10-01T10:39:20.822Z",
+  "dialect": "d1",
+  "goal_instance": "U-02617:G07:0",
+  "title_ids": [
+   "T0006",
+   "T0002",
+   "T0009",
+   "T0004",
+   "T0010",
+   "T0011",
+   "T0070",
+   "T0018",
+   "T0084",
+   "T0058",
+   "T0026",
+   "T0003",
+   "T0005",
+   "T0008",
+   "T0014",
+   "T0015",
+   "T0013",
+   "T0007",
+   "T0012",
+   "T0029",
+   "T0038",
+   "T0426",
+   "T0382",
+   "T0435",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T0511",
+   "T0126",
+   "T0419",
+   "T0027",
+   "T0252",
+   "T0229",
+   "T0422",
+   "T0168",
+   "T0023",
+   "T0073",
+   "T0505",
+   "T0031",
+   "T0085",
+   "T0035",
+   "T0024",
+   "T0067",
+   "T0127",
+   "T0022",
+   "T0518",
+   "T0048",
+   "T0050",
+   "T0055",
+   "T0077"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00618",
+   "type": "push",
+   "send_at": "2026-10-02T08:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-02617:G07:0",
+   "title_id": "T0006"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [
+   "push"
+  ],
+  "notes": [
+   "push token invalid (message_failed): prefer other channels next time",
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-02617",
+   "arm": "agent",
+   "goal_instance": "U-02617:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T10:39:20.822Z",
+   "deadline": "2026-10-04T10:39:20.822Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-02617@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T10:05:32.725Z",
+   "freshness_s": 174828.0,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-06-04T16:49:35.712000+00:00",
+   "source": "profile:U-02617",
+   "as_of": "2026-09-29T10:05:32.725Z",
+   "freshness_s": 174828.0,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:f1a5f028-934e-4ff8-a334-4e5e9b316ed3",
+   "as_of": "2026-10-01T10:39:20.758Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:f1a5f028-934e-4ff8-a334-4e5e9b316ed3",
+   "as_of": "2026-10-01T10:39:20.758Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-02617",
+   "as_of": "2026-09-29T10:05:32.725Z",
+   "freshness_s": 174828.0,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-02617",
+   "as_of": "2026-09-29T10:05:32.725Z",
+   "freshness_s": 174828.0,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": []
+}

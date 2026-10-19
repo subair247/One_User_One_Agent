@@ -1,0 +1,188 @@
+{
+ "viewer_id": "U-03101",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-03101:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T15:00:52.268Z",
+  "deadline": "2026-10-04T15:00:52.268Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "sune-lolo-d2",
+   "title_id": "T0813",
+   "next_episode": 1
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series sune-lolo-d2 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:b8a3b8ee-2f46-404b-8601-e8391b83c726"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01973"
+ ],
+ "actions": [
+  "A-00986",
+  "A-00987"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "0cf265c7-7c7d-4388-8557-9f99f75d4a54"
+ ],
+ "last_session_id": "192747ae-b350-455a-bf84-1d609cf43ab3",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00986",
+  "published_at": "2026-10-01T15:00:52.268Z",
+  "dialect": "d2",
+  "goal_instance": "U-03101:G07:0",
+  "title_ids": [
+   "T0813",
+   "T0522",
+   "T0521",
+   "T0583",
+   "T0524",
+   "T0526",
+   "T0528",
+   "T0540",
+   "T0533",
+   "T0534",
+   "T0550",
+   "T0548",
+   "T0556",
+   "T0568",
+   "T0565",
+   "T0523",
+   "T0525",
+   "T0537",
+   "T0536",
+   "T0531",
+   "T0539",
+   "T0538",
+   "T0554",
+   "T0542",
+   "T0544",
+   "T0535",
+   "T0584",
+   "T0596",
+   "T0616",
+   "T0679",
+   "T0779",
+   "T0829",
+   "T0832",
+   "T0575",
+   "T0746",
+   "T0620",
+   "T0547",
+   "T0899",
+   "T0567",
+   "T0590",
+   "T0559",
+   "T0580",
+   "T0848",
+   "T0652",
+   "T0562",
+   "T0546",
+   "T0581",
+   "T0553",
+   "T0578",
+   "T0900",
+   "T0618",
+   "T0639",
+   "T0604",
+   "T0716",
+   "T0560"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00987",
+   "type": "in_app_message",
+   "send_at": "2026-10-01T15:00:52.247Z",
+   "status": "sent",
+   "goal_instance": "U-03101:G07:0",
+   "title_id": "T0813"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-03101",
+   "arm": "agent",
+   "goal_instance": "U-03101:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T15:00:52.268Z",
+   "deadline": "2026-10-04T15:00:52.268Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-03101@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T05:34:16.832Z",
+   "freshness_s": 206795.0,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-07-06T22:49:52.582000+00:00",
+   "source": "profile:U-03101",
+   "as_of": "2026-09-29T05:34:16.832Z",
+   "freshness_s": 206795.0,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting:0cf265c7-7c7d-4388-8557-9f99f75d4a54",
+   "as_of": "2026-10-01T15:00:51.854Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:0cf265c7-7c7d-4388-8557-9f99f75d4a54",
+   "as_of": "2026-10-01T15:00:51.854Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile:U-03101",
+   "as_of": "2026-09-29T05:34:16.832Z",
+   "freshness_s": 206795.0,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-03101",
+   "as_of": "2026-09-29T05:34:16.832Z",
+   "freshness_s": 206795.0,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "consent: notification_opt_out events for ['push'] override profile"
+ ]
+}

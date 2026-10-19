@@ -1,0 +1,170 @@
+{
+ "viewer_id": "U-00334",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-00334:G08:0",
+  "goal_id": "G08",
+  "name": "try_new_release_7d",
+  "started_at": "2026-10-01T16:25:10.006Z",
+  "deadline": "2026-10-08T16:25:10.006Z",
+  "rule_version": 1,
+  "success_signal": "play_started: a title released in the 30 days before the goal start",
+  "status": "open",
+  "target": {},
+  "messages_planned": 0,
+  "assumptions": [],
+  "evidence": [
+   "profile:U-00334@2026-09-30T00:00:00.000Z"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-02379"
+ ],
+ "actions": [
+  "A-01178"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "4576d77b-db9c-423b-af9d-9a159cf06bfe"
+ ],
+ "last_session_id": "2867fd9d-d494-4fbf-b944-1214eb5bd2a8",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-01178",
+  "published_at": "2026-10-01T16:25:10.006Z",
+  "dialect": "d1",
+  "goal_instance": "U-00334:G08:0",
+  "title_ids": [
+   "T0426",
+   "T1626",
+   "T1647",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T1670",
+   "T0126",
+   "T0419",
+   "T0076",
+   "T1501",
+   "T0005",
+   "T1505",
+   "T0015",
+   "T0007",
+   "T0034",
+   "T0016",
+   "T1517",
+   "T1573",
+   "T0026",
+   "T0002",
+   "T1504",
+   "T0004",
+   "T1502",
+   "T1503",
+   "T1507",
+   "T1506",
+   "T0013",
+   "T0012",
+   "T1510",
+   "T0044",
+   "T0019",
+   "T1513",
+   "T1529",
+   "T1674",
+   "T1518",
+   "T0168",
+   "T0063",
+   "T1662",
+   "T0139",
+   "T0084",
+   "T0065",
+   "T1515",
+   "T1533",
+   "T0466",
+   "T0156",
+   "T0198",
+   "T1520",
+   "T0148",
+   "T1536"
+  ]
+ },
+ "messages": [],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G08 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-00334",
+   "arm": "agent",
+   "goal_instance": "U-00334:G08:0",
+   "goal_id": "G08",
+   "rule_version": 1,
+   "started_at": "2026-10-01T16:25:10.006Z",
+   "deadline": "2026-10-08T16:25:10.006Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-00334@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T03:10:47.114Z",
+   "freshness_s": 220462.5,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-05-02T01:26:26.464000+00:00",
+   "source": "profile:U-00334",
+   "as_of": "2026-09-29T03:10:47.114Z",
+   "freshness_s": 220462.5,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:4576d77b-db9c-423b-af9d-9a159cf06bfe",
+   "as_of": "2026-10-01T16:25:09.593Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting:4576d77b-db9c-423b-af9d-9a159cf06bfe",
+   "as_of": "2026-10-01T16:25:09.593Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-00334",
+   "as_of": "2026-09-29T03:10:47.114Z",
+   "freshness_s": 220462.5,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-00334",
+   "as_of": "2026-09-29T03:10:47.114Z",
+   "freshness_s": 220462.5,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d6"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d1 (app_setting) vs profile:d6"
+ ]
+}

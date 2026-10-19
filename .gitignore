@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+# The data pack is personal data under the messaging policy: keep it out of a hosted repo.
+pack/data/
+pack/replay/
+pack/pilot/
+# Simulator output is derived from the pack.
+sample_run/sim/

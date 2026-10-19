@@ -1,0 +1,81 @@
+{
+ "viewer_id": "U-04381",
+ "arm": "agent",
+ "goal": null,
+ "goals": [],
+ "decisions": [
+  "D-02087",
+  "D-02426"
+ ],
+ "actions": [],
+ "pending": [],
+ "seen_triggers": [
+  "dfeffc88-2485-451b-b5ff-f8c84e262e40",
+  "23e4afd0-62fa-4992-855b-77bc77ba235e"
+ ],
+ "last_session_id": null,
+ "last_trigger": null,
+ "live_page": null,
+ "messages": [],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": []
+ },
+ "outcomes": [],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-04381@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T04:06:02.428Z",
+   "freshness_s": 217938.9,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-07-01T20:56:34.184000+00:00",
+   "source": "profile:U-04381",
+   "as_of": "2026-09-29T04:06:02.428Z",
+   "freshness_s": 217938.9,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:23e4afd0-62fa-4992-855b-77bc77ba235e",
+   "as_of": "2026-10-01T16:38:21.291Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:23e4afd0-62fa-4992-855b-77bc77ba235e",
+   "as_of": "2026-10-01T16:38:21.291Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile:U-04381",
+   "as_of": "2026-09-29T04:06:02.428Z",
+   "freshness_s": 217938.9,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-04381",
+   "as_of": "2026-09-29T04:06:02.428Z",
+   "freshness_s": 217938.9,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "campaign_deeplink:d4"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d1 (app_setting) vs campaign_deeplink:d4",
+  "consent: notification_opt_out events for ['push'] override profile"
+ ]
+}

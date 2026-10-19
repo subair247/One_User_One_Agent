@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-00094",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-00094:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T14:17:37.086Z",
+  "deadline": "2026-10-04T14:17:37.086Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "jasuja-d1",
+   "title_id": "T0067",
+   "next_episode": 4
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series jasuja-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:8bb6f9e2-85f8-4644-8004-d130676e1756"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01813"
+ ],
+ "actions": [
+  "A-00887",
+  "A-00888"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "d8c12bb7-03fc-44ba-b373-4b7fbbfb761c"
+ ],
+ "last_session_id": "a59d512a-2878-49c5-9301-5d66d5cc1d4b",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00887",
+  "published_at": "2026-10-01T14:17:37.086Z",
+  "dialect": "d1",
+  "goal_instance": "U-00094:G07:0",
+  "title_ids": [
+   "T0067",
+   "T1501",
+   "T1502",
+   "T1503",
+   "T1506",
+   "T0013",
+   "T0007",
+   "T1511",
+   "T0016",
+   "T1523",
+   "T1509",
+   "T0005",
+   "T0004",
+   "T1505",
+   "T1507",
+   "T0015",
+   "T0012",
+   "T1510",
+   "T1512",
+   "T0034",
+   "T1508",
+   "T0426",
+   "T1626",
+   "T1647",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T1670",
+   "T0126",
+   "T0419",
+   "T1540",
+   "T0022",
+   "T1675",
+   "T1516",
+   "T1518",
+   "T0055",
+   "T1668",
+   "T0077",
+   "T1662",
+   "T1533",
+   "T0018",
+   "T1573",
+   "T0037",
+   "T0027",
+   "T0030",
+   "T1529",
+   "T0023",
+   "T1673",
+   "T0083",
+   "T0466"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00888",
+   "type": "push",
+   "send_at": "2026-10-02T08:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-00094:G07:0",
+   "title_id": "T0067"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-00094",
+   "arm": "agent",
+   "goal_instance": "U-00094:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T14:17:37.086Z",
+   "deadline": "2026-10-04T14:17:37.086Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-00094@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T06:59:54.198Z",
+   "freshness_s": 199062.5,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-11-30T21:53:51.290000+00:00",
+   "source": "profile:U-00094",
+   "as_of": "2026-09-29T06:59:54.198Z",
+   "freshness_s": 199062.5,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:d8c12bb7-03fc-44ba-b373-4b7fbbfb761c",
+   "as_of": "2026-10-01T14:17:36.673Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting:d8c12bb7-03fc-44ba-b373-4b7fbbfb761c",
+   "as_of": "2026-10-01T14:17:36.673Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-00094",
+   "as_of": "2026-09-29T06:59:54.198Z",
+   "freshness_s": 199062.5,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-00094",
+   "as_of": "2026-09-29T06:59:54.198Z",
+   "freshness_s": 199062.5,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d2"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d1 (app_setting) vs profile:d2"
+ ]
+}

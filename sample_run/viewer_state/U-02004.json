@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-02004",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-02004:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T03:15:02.990Z",
+  "deadline": "2026-10-04T03:15:02.990Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "hama-chudibha-d1",
+   "title_id": "T0002",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series hama-chudibha-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:c167541f-5dc2-4f56-8a1a-235d2d28151a"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00223"
+ ],
+ "actions": [
+  "A-00128",
+  "A-00129"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "cc2d4381-37c7-4cbc-8ab4-fd21cc06f307"
+ ],
+ "last_session_id": "97844266-b05e-481b-81aa-8923b7ae0cdc",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00128",
+  "published_at": "2026-10-01T03:15:02.990Z",
+  "dialect": "d1",
+  "goal_instance": "U-02004:G07:0",
+  "title_ids": [
+   "T0002",
+   "T0005",
+   "T1502",
+   "T1503",
+   "T1505",
+   "T1506",
+   "T0007",
+   "T1512",
+   "T1511",
+   "T0016",
+   "T1523",
+   "T0004",
+   "T1507",
+   "T0015",
+   "T0013",
+   "T0012",
+   "T1510",
+   "T0034",
+   "T1508",
+   "T0025",
+   "T1509",
+   "T0426",
+   "T1626",
+   "T1647",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T1670",
+   "T0126",
+   "T0419",
+   "T0067",
+   "T1540",
+   "T0022",
+   "T1675",
+   "T1516",
+   "T1518",
+   "T0055",
+   "T1668",
+   "T0077",
+   "T1662",
+   "T0018",
+   "T1519",
+   "T0026",
+   "T0027",
+   "T0252",
+   "T1574",
+   "T0422",
+   "T0168",
+   "T0023",
+   "T1526"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00129",
+   "type": "in_app_message",
+   "send_at": "2026-10-01T03:15:02.969Z",
+   "status": "sent",
+   "goal_instance": "U-02004:G07:0",
+   "title_id": "T0002"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-02004",
+   "arm": "agent",
+   "goal_instance": "U-02004:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T03:15:02.990Z",
+   "deadline": "2026-10-04T03:15:02.990Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-02004@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T07:35:27.992Z",
+   "freshness_s": 157174.6,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-01-17T14:45:47.115000+00:00",
+   "source": "profile:U-02004",
+   "as_of": "2026-09-29T07:35:27.992Z",
+   "freshness_s": 157174.6,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:cc2d4381-37c7-4cbc-8ab4-fd21cc06f307",
+   "as_of": "2026-10-01T03:15:02.575Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting:cc2d4381-37c7-4cbc-8ab4-fd21cc06f307",
+   "as_of": "2026-10-01T03:15:02.575Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile:U-02004",
+   "as_of": "2026-09-29T07:35:27.992Z",
+   "freshness_s": 157174.6,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-02004",
+   "as_of": "2026-09-29T07:35:27.992Z",
+   "freshness_s": 157174.6,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "campaign_deeplink:d2"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d1 (app_setting) vs campaign_deeplink:d2"
+ ]
+}

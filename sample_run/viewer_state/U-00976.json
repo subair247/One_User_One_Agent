@@ -1,0 +1,188 @@
+{
+ "viewer_id": "U-00976",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-00976:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T11:38:19.081Z",
+  "deadline": "2026-10-04T11:38:19.081Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "bhaja-moguba-d2",
+   "title_id": "T1678",
+   "next_episode": 3
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series bhaja-moguba-d2 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:e5a35f43-71cd-49db-bd2b-1e4d860152f3"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01413"
+ ],
+ "actions": [
+  "A-00679",
+  "A-00680"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "a853ef71-4c51-4171-8b65-a805d654bf07"
+ ],
+ "last_session_id": "8f9202e8-1221-43e2-a63b-27002a3670e1",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00679",
+  "published_at": "2026-10-01T11:38:19.081Z",
+  "dialect": "d2",
+  "goal_instance": "U-00976:G07:0",
+  "title_ids": [
+   "T0524",
+   "T0568",
+   "T0585",
+   "T0521",
+   "T0522",
+   "T0537",
+   "T0540",
+   "T0554",
+   "T0530",
+   "T0533",
+   "T0542",
+   "T0544",
+   "T0550",
+   "T0548",
+   "T0523",
+   "T0526",
+   "T0529",
+   "T0525",
+   "T0536",
+   "T0531",
+   "T0528",
+   "T0539",
+   "T0538",
+   "T0534",
+   "T0535",
+   "T0584",
+   "T0596",
+   "T0616",
+   "T0679",
+   "T0779",
+   "T0829",
+   "T0832",
+   "T0575",
+   "T0746",
+   "T0556",
+   "T0566",
+   "T0607",
+   "T0626",
+   "T0665",
+   "T0675",
+   "T0637",
+   "T0609",
+   "T0701",
+   "T0612",
+   "T0565",
+   "T0620",
+   "T0547",
+   "T0899",
+   "T0567",
+   "T0590",
+   "T0559",
+   "T0580",
+   "T0848",
+   "T0652"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00680",
+   "type": "push",
+   "send_at": "2026-10-02T14:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-00976:G07:0",
+   "title_id": "T0524"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [
+   "push"
+  ],
+  "notes": [
+   "push token invalid (message_failed): prefer other channels next time",
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-00976",
+   "arm": "agent",
+   "goal_instance": "U-00976:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T11:38:19.081Z",
+   "deadline": "2026-10-04T11:38:19.081Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-00976@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T04:36:06.374Z",
+   "freshness_s": 198132.3,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-07-16T02:17:39.179000+00:00",
+   "source": "profile:U-00976",
+   "as_of": "2026-09-29T04:36:06.374Z",
+   "freshness_s": 198132.3,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting:a853ef71-4c51-4171-8b65-a805d654bf07",
+   "as_of": "2026-10-01T11:38:18.667Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:a853ef71-4c51-4171-8b65-a805d654bf07",
+   "as_of": "2026-10-01T11:38:18.667Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-00976",
+   "as_of": "2026-09-29T04:36:06.374Z",
+   "freshness_s": 198132.3,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-00976",
+   "as_of": "2026-09-29T04:36:06.374Z",
+   "freshness_s": 198132.3,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": []
+}

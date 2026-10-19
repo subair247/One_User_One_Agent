@@ -1,0 +1,184 @@
+{
+ "viewer_id": "U-01468",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-01468:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T05:07:44.673Z",
+  "deadline": "2026-10-04T05:07:44.673Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "nina-d5",
+   "title_id": "T1905",
+   "next_episode": 1
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series nina-d5 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:f95caed0-444b-4627-9bfc-116b5179caee"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00612"
+ ],
+ "actions": [
+  "A-00228",
+  "A-00229"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "8e9b73b6-0d5b-408e-9aed-ed6470106e52"
+ ],
+ "last_session_id": "0882df6d-be0e-4af3-b7cf-65da4c049bb9",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00228",
+  "published_at": "2026-10-01T05:07:44.673Z",
+  "dialect": "d5",
+  "goal_instance": "U-01468:G07:0",
+  "title_ids": [
+   "T1186",
+   "T1180",
+   "T1187",
+   "T1182",
+   "T1199",
+   "T1183",
+   "T1188",
+   "T1293",
+   "T1243",
+   "T1295",
+   "T1196",
+   "T1178",
+   "T1185",
+   "T1181",
+   "T1189",
+   "T1191",
+   "T1206",
+   "T1226",
+   "T1228",
+   "T1241",
+   "T1200",
+   "T1192",
+   "T1213",
+   "T1219",
+   "T1250",
+   "T1264",
+   "T1381",
+   "T1202",
+   "T1215",
+   "T1326",
+   "T1278",
+   "T1184",
+   "T1221",
+   "T1386",
+   "T1195",
+   "T1194",
+   "T1190",
+   "T1249",
+   "T1251",
+   "T1384",
+   "T1294",
+   "T1245",
+   "T1263",
+   "T1211",
+   "T1360",
+   "T1216",
+   "T1342",
+   "T1309",
+   "T1209",
+   "T1339",
+   "T1222"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00229",
+   "type": "push",
+   "send_at": "2026-10-01T11:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-01468:G07:0",
+   "title_id": "T1186"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-01468",
+   "arm": "agent",
+   "goal_instance": "U-01468:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T05:07:44.673Z",
+   "deadline": "2026-10-04T05:07:44.673Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-01468@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T04:42:10.623Z",
+   "freshness_s": 174333.6,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-01-26T00:13:29.020000+00:00",
+   "source": "profile:U-01468",
+   "as_of": "2026-09-29T04:42:10.623Z",
+   "freshness_s": 174333.6,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting:8e9b73b6-0d5b-408e-9aed-ed6470106e52",
+   "as_of": "2026-10-01T05:07:44.260Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:8e9b73b6-0d5b-408e-9aed-ed6470106e52",
+   "as_of": "2026-10-01T05:07:44.260Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-01468",
+   "as_of": "2026-09-29T04:42:10.623Z",
+   "freshness_s": 174333.6,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-01468",
+   "as_of": "2026-09-29T04:42:10.623Z",
+   "freshness_s": 174333.6,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "profile_duplicate_rows: kept updated_at=2026-09-29T04:42:10.623Z (status=never, dialect=d5), dropped updated_at=2026-09-18T00:39:37.533Z (status=lapsed, dialect=d4)"
+ ]
+}

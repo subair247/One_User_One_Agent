@@ -1,0 +1,76 @@
+{
+ "viewer_id": "U-00969",
+ "arm": "agent",
+ "goal": null,
+ "goals": [],
+ "decisions": [
+  "D-00022",
+  "D-02380"
+ ],
+ "actions": [],
+ "pending": [],
+ "seen_triggers": [
+  "40513d05-80ea-4085-aedf-4e95ff2f1abe",
+  "ad92c592-a7ad-4a84-9f46-f4e0c9f1b463"
+ ],
+ "last_session_id": null,
+ "last_trigger": null,
+ "live_page": null,
+ "messages": [],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": []
+ },
+ "outcomes": [],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-00969@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T09:49:57.453Z",
+   "freshness_s": 196538.5,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2024-10-21T10:26:52.944000+00:00",
+   "source": "profile:U-00969",
+   "as_of": "2026-09-29T09:49:57.453Z",
+   "freshness_s": 196538.5,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": null,
+   "source": "app_setting:ad92c592-a7ad-4a84-9f46-f4e0c9f1b463",
+   "as_of": "2026-10-01T16:25:35.975Z",
+   "freshness_s": 0.0,
+   "rule": "app_dialect 'd7' is missing or not in the catalogue; page cannot be verified"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:ad92c592-a7ad-4a84-9f46-f4e0c9f1b463",
+   "as_of": "2026-10-01T16:25:35.975Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-00969",
+   "as_of": "2026-09-29T09:49:57.453Z",
+   "freshness_s": 196538.5,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-00969",
+   "as_of": "2026-09-29T09:49:57.453Z",
+   "freshness_s": 196538.5,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": []
+}

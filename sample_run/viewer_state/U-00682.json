@@ -1,0 +1,25 @@
+{
+ "viewer_id": "U-00682",
+ "arm": "agent",
+ "goal": null,
+ "goals": [],
+ "decisions": [
+  "D-00465"
+ ],
+ "actions": [],
+ "pending": [],
+ "seen_triggers": [
+  "d5d3f236-dcee-4c9f-932a-d219de43128f"
+ ],
+ "last_session_id": null,
+ "last_trigger": null,
+ "live_page": null,
+ "messages": [],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": []
+ },
+ "outcomes": [],
+ "facts": {},
+ "conflicts": []
+}

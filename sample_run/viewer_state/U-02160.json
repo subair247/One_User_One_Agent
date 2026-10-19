@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-02160",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-02160:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T14:28:55.606Z",
+  "deadline": "2026-10-04T14:28:55.606Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "bagugu-gigupi-d1",
+   "title_id": "T1504",
+   "next_episode": 1
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series bagugu-gigupi-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:d55725dc-dbeb-473c-9925-23c18d52cbf2"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01860"
+ ],
+ "actions": [
+  "A-00912",
+  "A-00913"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "04cc0147-5066-4b73-a7e5-c1227cc8d289"
+ ],
+ "last_session_id": "59e73cc7-74c4-4449-916d-d8c1e67f948d",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00912",
+  "published_at": "2026-10-01T14:28:55.606Z",
+  "dialect": "d1",
+  "goal_instance": "U-02160:G07:0",
+  "title_ids": [
+   "T0009",
+   "T0004",
+   "T0010",
+   "T0013",
+   "T0035",
+   "T0016",
+   "T0067",
+   "T0084",
+   "T0037",
+   "T0044",
+   "T0020",
+   "T0002",
+   "T0003",
+   "T0005",
+   "T0006",
+   "T0008",
+   "T0014",
+   "T0015",
+   "T0011",
+   "T0007",
+   "T0012",
+   "T0426",
+   "T0382",
+   "T0435",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T0511",
+   "T0126",
+   "T0419",
+   "T0520",
+   "T0065",
+   "T0033",
+   "T0273",
+   "T0045",
+   "T0061",
+   "T0042",
+   "T0055",
+   "T0077",
+   "T0083",
+   "T0070",
+   "T0018",
+   "T0058",
+   "T0026",
+   "T0027",
+   "T0252",
+   "T0229",
+   "T0422",
+   "T0168",
+   "T0023"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00913",
+   "type": "push",
+   "send_at": "2026-10-02T13:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-02160:G07:0",
+   "title_id": "T0009"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-02160",
+   "arm": "agent",
+   "goal_instance": "U-02160:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T14:28:55.606Z",
+   "deadline": "2026-10-04T14:28:55.606Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-02160@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T15:19:15.402Z",
+   "freshness_s": 169779.8,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-10-17T07:54:45.484000+00:00",
+   "source": "profile:U-02160",
+   "as_of": "2026-09-29T15:19:15.402Z",
+   "freshness_s": 169779.8,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:04cc0147-5066-4b73-a7e5-c1227cc8d289",
+   "as_of": "2026-10-01T14:28:55.192Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:04cc0147-5066-4b73-a7e5-c1227cc8d289",
+   "as_of": "2026-10-01T14:28:55.192Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-02160",
+   "as_of": "2026-09-29T15:19:15.402Z",
+   "freshness_s": 169779.8,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-02160",
+   "as_of": "2026-09-29T15:19:15.402Z",
+   "freshness_s": 169779.8,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d2"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d1 (app_setting) vs profile:d2"
+ ]
+}

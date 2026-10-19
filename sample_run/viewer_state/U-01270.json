@@ -1,0 +1,84 @@
+{
+ "viewer_id": "U-01270",
+ "arm": "agent",
+ "goal": null,
+ "goals": [],
+ "decisions": [
+  "D-01130",
+  "D-01132",
+  "D-01903",
+  "D-01904",
+  "D-02076",
+  "D-02213"
+ ],
+ "actions": [],
+ "pending": [],
+ "seen_triggers": [
+  "32d8f71c-ef43-4cb5-9e49-5f199fc79b43",
+  "10ee5833-00a4-4388-979c-2a428c101064",
+  "e5365c52-5444-41a4-8503-2e6a550988c2",
+  "a4bd5b10-bf59-4b66-b57e-8bc451315a24",
+  "b11b13d0-2bb6-4905-951f-ea1947525720",
+  "450c0d5d-f567-4b9d-963b-9553a3f06607"
+ ],
+ "last_session_id": null,
+ "last_trigger": null,
+ "live_page": null,
+ "messages": [],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": []
+ },
+ "outcomes": [],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-01270@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T13:09:32.297Z",
+   "freshness_s": 181357.0,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-12-15T22:26:44.362000+00:00",
+   "source": "profile:U-01270",
+   "as_of": "2026-09-29T13:09:32.297Z",
+   "freshness_s": 181357.0,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": null,
+   "source": "app_setting:450c0d5d-f567-4b9d-963b-9553a3f06607",
+   "as_of": "2026-10-01T15:32:09.252Z",
+   "freshness_s": 0.0,
+   "rule": "app_dialect 'd7' is missing or not in the catalogue; page cannot be verified"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:450c0d5d-f567-4b9d-963b-9553a3f06607",
+   "as_of": "2026-10-01T15:32:09.252Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-01270",
+   "as_of": "2026-09-29T13:09:32.297Z",
+   "freshness_s": 181357.0,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile:U-01270",
+   "as_of": "2026-09-29T13:09:32.297Z",
+   "freshness_s": 181357.0,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": []
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": []
+}

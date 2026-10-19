@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-01040",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-01040:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T13:42:39.277Z",
+  "deadline": "2026-10-04T13:42:39.277Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "bagugu-gigupi-d1",
+   "title_id": "T1504",
+   "next_episode": 1
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series bagugu-gigupi-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:0507521e-ce4a-499c-9a1a-ae6ba8825eff"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01698"
+ ],
+ "actions": [
+  "A-00825",
+  "A-00826"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "9a4167ed-e0dd-477a-8c23-3681147114d6"
+ ],
+ "last_session_id": "8bb7fd18-06db-410e-a81c-312b172f923e",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00825",
+  "published_at": "2026-10-01T13:42:39.277Z",
+  "dialect": "d1",
+  "goal_instance": "U-01040:G07:0",
+  "title_ids": [
+   "T0009",
+   "T0005",
+   "T0004",
+   "T0010",
+   "T0007",
+   "T0038",
+   "T0016",
+   "T0084",
+   "T0520",
+   "T0030",
+   "T0022",
+   "T0002",
+   "T0006",
+   "T0008",
+   "T0014",
+   "T0015",
+   "T0011",
+   "T0013",
+   "T0012",
+   "T0029",
+   "T0034",
+   "T0426",
+   "T0382",
+   "T0435",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T0511",
+   "T0126",
+   "T0419",
+   "T0273",
+   "T0041",
+   "T0518",
+   "T0352",
+   "T0063",
+   "T0060",
+   "T0226",
+   "T0179",
+   "T0216",
+   "T0416",
+   "T0035",
+   "T0070",
+   "T0024",
+   "T0067",
+   "T0127",
+   "T0048",
+   "T0050",
+   "T0055",
+   "T0505",
+   "T0077"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00826",
+   "type": "push",
+   "send_at": "2026-10-02T13:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-01040:G07:0",
+   "title_id": "T0009"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-01040",
+   "arm": "agent",
+   "goal_instance": "U-01040:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T13:42:39.277Z",
+   "deadline": "2026-10-04T13:42:39.277Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-01040@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-28T23:01:54.124Z",
+   "freshness_s": 225644.7,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-03-11T13:23:32.528000+00:00",
+   "source": "profile:U-01040",
+   "as_of": "2026-09-28T23:01:54.124Z",
+   "freshness_s": 225644.7,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:9a4167ed-e0dd-477a-8c23-3681147114d6",
+   "as_of": "2026-10-01T13:42:38.859Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:9a4167ed-e0dd-477a-8c23-3681147114d6",
+   "as_of": "2026-10-01T13:42:38.859Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-01040",
+   "as_of": "2026-09-28T23:01:54.124Z",
+   "freshness_s": 225644.7,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-01040",
+   "as_of": "2026-09-28T23:01:54.124Z",
+   "freshness_s": 225644.7,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "campaign_deeplink:d4"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d1 (app_setting) vs campaign_deeplink:d4"
+ ]
+}

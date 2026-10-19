@@ -1,0 +1,189 @@
+{
+ "viewer_id": "U-01108",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-01108:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T14:04:51.942Z",
+  "deadline": "2026-10-04T14:04:51.942Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "hama-chudibha-d1",
+   "title_id": "T0002",
+   "next_episode": 3
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series hama-chudibha-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:8188587b-507a-4ff0-889a-84353d3e60db"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00364",
+  "D-01775"
+ ],
+ "actions": [
+  "A-00859",
+  "A-00860"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "2a3b2214-f7fe-407d-88be-23d88a56f0db",
+  "eb75a620-92b5-44be-b0d5-7d9c1b0e5ead"
+ ],
+ "last_session_id": "f23304c1-d24c-429d-a440-5671f937a726",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00859",
+  "published_at": "2026-10-01T14:04:51.942Z",
+  "dialect": "d1",
+  "goal_instance": "U-01108:G07:0",
+  "title_ids": [
+   "T0002",
+   "T0009",
+   "T0004",
+   "T0010",
+   "T0011",
+   "T0070",
+   "T0018",
+   "T0084",
+   "T0058",
+   "T0026",
+   "T0027",
+   "T0005",
+   "T0006",
+   "T0008",
+   "T0014",
+   "T0015",
+   "T0013",
+   "T0007",
+   "T0012",
+   "T0029",
+   "T0038",
+   "T0426",
+   "T0382",
+   "T0435",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T0511",
+   "T0126",
+   "T0419",
+   "T0065",
+   "T0045",
+   "T0517",
+   "T0139",
+   "T0107",
+   "T0466",
+   "T0156",
+   "T0198",
+   "T0060",
+   "T0148",
+   "T0034",
+   "T0017",
+   "T0024",
+   "T0228",
+   "T0037",
+   "T0127",
+   "T0030",
+   "T0089",
+   "T0023",
+   "T0516"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00860",
+   "type": "push",
+   "send_at": "2026-10-02T14:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-01108:G07:0",
+   "title_id": "T0002"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-01108",
+   "arm": "agent",
+   "goal_instance": "U-01108:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T14:04:51.942Z",
+   "deadline": "2026-10-04T14:04:51.942Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "event:c0c13c62-e287-4172-ae5f-b035c032a08a",
+   "as_of": "2026-09-30T10:02:09.734Z",
+   "freshness_s": 100961.8,
+   "rule": "newer subscription event beats stale profile"
+  },
+  "signup_at": {
+   "value": "2025-11-18T06:07:50.361000+00:00",
+   "source": "profile:U-01108",
+   "as_of": "2026-09-29T07:16:45.539Z",
+   "freshness_s": 197286.0,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:eb75a620-92b5-44be-b0d5-7d9c1b0e5ead",
+   "as_of": "2026-10-01T14:04:51.528Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:eb75a620-92b5-44be-b0d5-7d9c1b0e5ead",
+   "as_of": "2026-10-01T14:04:51.528Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-01108",
+   "as_of": "2026-09-29T07:16:45.539Z",
+   "freshness_s": 197286.0,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-01108",
+   "as_of": "2026-09-29T07:16:45.539Z",
+   "freshness_s": 197286.0,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d4"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "subscription: profile:lapsed vs event:active -> event wins (newer)",
+  "dialect: used d1 (app_setting) vs profile:d4"
+ ]
+}

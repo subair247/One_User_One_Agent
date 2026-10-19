@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-03006",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-03006:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T08:34:49.807Z",
+  "deadline": "2026-10-04T08:34:49.807Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "gidha-sudhako-d1",
+   "title_id": "T1505",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series gidha-sudhako-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:44710ab4-e064-4aa3-a1bb-7e2cb4482bb2"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01056"
+ ],
+ "actions": [
+  "A-00488",
+  "A-00489"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "e0c0792c-d340-491c-8adb-b55ac3c81c2e"
+ ],
+ "last_session_id": "e397817e-5ec9-4c8b-bb77-fa1b42a3ee65",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00488",
+  "published_at": "2026-10-01T08:34:49.807Z",
+  "dialect": "d1",
+  "goal_instance": "U-03006:G07:0",
+  "title_ids": [
+   "T0010",
+   "T0005",
+   "T0009",
+   "T0004",
+   "T0007",
+   "T0038",
+   "T0016",
+   "T0084",
+   "T0520",
+   "T0030",
+   "T0022",
+   "T0006",
+   "T0008",
+   "T0014",
+   "T0015",
+   "T0011",
+   "T0013",
+   "T0012",
+   "T0034",
+   "T0035",
+   "T0017",
+   "T0426",
+   "T0382",
+   "T0435",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T0511",
+   "T0126",
+   "T0419",
+   "T0065",
+   "T0045",
+   "T0517",
+   "T0139",
+   "T0107",
+   "T0466",
+   "T0156",
+   "T0198",
+   "T0060",
+   "T0148",
+   "T0024",
+   "T0018",
+   "T0228",
+   "T0037",
+   "T0127",
+   "T0027",
+   "T0089",
+   "T0023",
+   "T0516",
+   "T0083"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00489",
+   "type": "push",
+   "send_at": "2026-10-02T08:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-03006:G07:0",
+   "title_id": "T0010"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-03006",
+   "arm": "agent",
+   "goal_instance": "U-03006:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T08:34:49.807Z",
+   "deadline": "2026-10-04T08:34:49.807Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-03006@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-28T21:52:40.382Z",
+   "freshness_s": 211329.0,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-12-27T14:50:42.571000+00:00",
+   "source": "profile:U-03006",
+   "as_of": "2026-09-28T21:52:40.382Z",
+   "freshness_s": 211329.0,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:e0c0792c-d340-491c-8adb-b55ac3c81c2e",
+   "as_of": "2026-10-01T08:34:49.392Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:e0c0792c-d340-491c-8adb-b55ac3c81c2e",
+   "as_of": "2026-10-01T08:34:49.392Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-03006",
+   "as_of": "2026-09-28T21:52:40.382Z",
+   "freshness_s": 211329.0,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-03006",
+   "as_of": "2026-09-28T21:52:40.382Z",
+   "freshness_s": 211329.0,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d6"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d1 (app_setting) vs profile:d6"
+ ]
+}

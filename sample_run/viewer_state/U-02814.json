@@ -1,0 +1,188 @@
+{
+ "viewer_id": "U-02814",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-02814:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T17:01:40.248Z",
+  "deadline": "2026-10-04T17:01:40.248Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "patena-d1",
+   "title_id": "T1512",
+   "next_episode": 2
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series patena-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:f0f95c21-723d-4f38-8067-9cd0c8bd9774"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-02508",
+  "D-02510"
+ ],
+ "actions": [
+  "A-01232",
+  "A-01233"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "7cd0e047-e353-45d7-be82-54a914c70cff",
+  "022eaf3d-1b1c-4c2f-a3b4-7bdf5b725264"
+ ],
+ "last_session_id": "379a3bc7-62e2-446f-a467-a31b4cd01b64",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-01232",
+  "published_at": "2026-10-01T17:01:40.248Z",
+  "dialect": "d1",
+  "goal_instance": "U-02814:G07:0",
+  "title_ids": [
+   "T1512",
+   "T1501",
+   "T1505",
+   "T0015",
+   "T0007",
+   "T0034",
+   "T0016",
+   "T1517",
+   "T1573",
+   "T0026",
+   "T0044",
+   "T0002",
+   "T1504",
+   "T0004",
+   "T1502",
+   "T1503",
+   "T1507",
+   "T1506",
+   "T0013",
+   "T0012",
+   "T1510",
+   "T0426",
+   "T1626",
+   "T1647",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T1670",
+   "T0126",
+   "T0419",
+   "T0019",
+   "T1513",
+   "T1529",
+   "T1674",
+   "T1518",
+   "T0168",
+   "T0063",
+   "T1662",
+   "T0139",
+   "T0085",
+   "T0252",
+   "T1521",
+   "T1574",
+   "T0352",
+   "T0053",
+   "T1546",
+   "T1562",
+   "T0117",
+   "T0098",
+   "T0068"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-01233",
+   "type": "push",
+   "send_at": "2026-10-02T15:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-02814:G07:0",
+   "title_id": "T1512"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-02814",
+   "arm": "agent",
+   "goal_instance": "U-02814:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T17:01:40.248Z",
+   "deadline": "2026-10-04T17:01:40.248Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-02814@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T07:01:06.626Z",
+   "freshness_s": 208833.2,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-02-12T22:03:48.224000+00:00",
+   "source": "profile:U-02814",
+   "as_of": "2026-09-29T07:01:06.626Z",
+   "freshness_s": 208833.2,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:022eaf3d-1b1c-4c2f-a3b4-7bdf5b725264",
+   "as_of": "2026-10-01T17:01:39.833Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting:022eaf3d-1b1c-4c2f-a3b4-7bdf5b725264",
+   "as_of": "2026-10-01T17:01:39.833Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-02814",
+   "as_of": "2026-09-29T07:01:06.626Z",
+   "freshness_s": 208833.2,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-02814",
+   "as_of": "2026-09-29T07:01:06.626Z",
+   "freshness_s": 208833.2,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d2"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d1 (app_setting) vs profile:d2"
+ ]
+}

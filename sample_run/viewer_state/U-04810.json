@@ -1,0 +1,78 @@
+{
+ "viewer_id": "U-04810",
+ "arm": "agent",
+ "goal": null,
+ "goals": [],
+ "decisions": [
+  "D-01716"
+ ],
+ "actions": [],
+ "pending": [],
+ "seen_triggers": [
+  "aded0b08-3001-4b70-91f6-924427c98c7c"
+ ],
+ "last_session_id": null,
+ "last_trigger": null,
+ "live_page": null,
+ "messages": [],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": []
+ },
+ "outcomes": [],
+ "facts": {
+  "subscription_status": {
+   "value": "lapsed",
+   "source": "profile:U-04810@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-28T23:42:45.489Z",
+   "freshness_s": 223429.5,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2025-11-23T20:51:12.351000+00:00",
+   "source": "profile:U-04810",
+   "as_of": "2026-09-28T23:42:45.489Z",
+   "freshness_s": 223429.5,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": null,
+   "source": "app_setting:aded0b08-3001-4b70-91f6-924427c98c7c",
+   "as_of": "2026-10-01T13:46:34.983Z",
+   "freshness_s": 0.0,
+   "rule": "app_dialect 'NA' is missing or not in the catalogue; page cannot be verified"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:aded0b08-3001-4b70-91f6-924427c98c7c",
+   "as_of": "2026-10-01T13:46:34.983Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-04810",
+   "as_of": "2026-09-28T23:42:45.489Z",
+   "freshness_s": 223429.5,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-04810",
+   "as_of": "2026-09-28T23:42:45.489Z",
+   "freshness_s": 223429.5,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d3"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used NA (app_setting) vs profile:d3"
+ ]
+}

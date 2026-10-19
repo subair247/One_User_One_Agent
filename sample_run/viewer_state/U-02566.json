@@ -1,0 +1,186 @@
+{
+ "viewer_id": "U-02566",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-02566:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T12:07:06.474Z",
+  "deadline": "2026-10-04T12:07:06.474Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "nini-namoko-d1",
+   "title_id": "T0012",
+   "next_episode": 6
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series nini-namoko-d1 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:fcf87d25-7302-43cf-b681-f801be894dae"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-01493"
+ ],
+ "actions": [
+  "A-00720",
+  "A-00721"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "a2b8f4eb-cb7b-4006-a5b5-df1ee241c182"
+ ],
+ "last_session_id": "531d9aa2-96a1-4dd4-a230-beda1eb422ae",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-00720",
+  "published_at": "2026-10-01T12:07:06.474Z",
+  "dialect": "d1",
+  "goal_instance": "U-02566:G07:0",
+  "title_ids": [
+   "T0012",
+   "T0003",
+   "T0010",
+   "T0007",
+   "T0029",
+   "T0038",
+   "T0016",
+   "T0025",
+   "T0049",
+   "T0520",
+   "T0030",
+   "T0002",
+   "T0009",
+   "T0004",
+   "T0006",
+   "T0008",
+   "T0015",
+   "T0011",
+   "T0013",
+   "T0034",
+   "T0035",
+   "T0426",
+   "T0382",
+   "T0435",
+   "T0195",
+   "T0036",
+   "T0413",
+   "T0137",
+   "T0511",
+   "T0126",
+   "T0419",
+   "T0022",
+   "T0273",
+   "T0041",
+   "T0518",
+   "T0352",
+   "T0063",
+   "T0060",
+   "T0226",
+   "T0179",
+   "T0216",
+   "T0017",
+   "T0024",
+   "T0018",
+   "T0228",
+   "T0037",
+   "T0127",
+   "T0027",
+   "T0089",
+   "T0023",
+   "T0516"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00721",
+   "type": "push",
+   "send_at": "2026-10-02T14:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-02566:G07:0",
+   "title_id": "T0012"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [],
+  "notes": [
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-02566",
+   "arm": "agent",
+   "goal_instance": "U-02566:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T12:07:06.474Z",
+   "deadline": "2026-10-04T12:07:06.474Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "active",
+   "source": "profile:U-02566@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-28T23:59:47.280Z",
+   "freshness_s": 216438.8,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-07-16T04:26:04.883000+00:00",
+   "source": "profile:U-02566",
+   "as_of": "2026-09-28T23:59:47.280Z",
+   "freshness_s": 216438.8,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting:a2b8f4eb-cb7b-4006-a5b5-df1ee241c182",
+   "as_of": "2026-10-01T12:07:06.061Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "hin",
+   "source": "app_setting:a2b8f4eb-cb7b-4006-a5b5-df1ee241c182",
+   "as_of": "2026-10-01T12:07:06.061Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-02566",
+   "as_of": "2026-09-28T23:59:47.280Z",
+   "freshness_s": 216438.8,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-02566",
+   "as_of": "2026-09-28T23:59:47.280Z",
+   "freshness_s": 216438.8,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d4"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d1 (app_setting) vs profile:d4"
+ ]
+}

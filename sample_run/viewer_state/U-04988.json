@@ -1,0 +1,196 @@
+{
+ "viewer_id": "U-04988",
+ "arm": "agent",
+ "goal": {
+  "instance": "U-04988:G07:0",
+  "goal_id": "G07",
+  "name": "resume_series_3d",
+  "started_at": "2026-10-01T02:56:20.674Z",
+  "deadline": "2026-10-04T02:56:20.674Z",
+  "rule_version": 1,
+  "success_signal": "play_started: same content_slug as the unfinished series",
+  "status": "open",
+  "target": {
+   "slug": "bhaja-moguba-d2",
+   "title_id": "T1678",
+   "next_episode": 3
+  },
+  "messages_planned": 1,
+  "assumptions": [
+   "series bhaja-moguba-d2 has episodes left after the last completed one"
+  ],
+  "evidence": [
+   "event:efe55461-730f-465f-8adf-9898e87e3226"
+  ],
+  "source": "model_verified"
+ },
+ "goals": [],
+ "decisions": [
+  "D-00192",
+  "D-00193",
+  "D-02465",
+  "D-02466"
+ ],
+ "actions": [
+  "A-00117",
+  "A-00118",
+  "A-01210"
+ ],
+ "pending": [],
+ "seen_triggers": [
+  "4292852c-e34e-4aa8-a8cc-025e4153e148",
+  "67aa12fc-2a1a-49ae-b3ea-8ee25425c729",
+  "caeca35a-1047-44b1-8b98-cb1ce5c8a5bb",
+  "e40f8906-9423-4da8-92f5-ff5bd6cf49a2"
+ ],
+ "last_session_id": "1658d678-6feb-477e-9f82-91eb618d32d7",
+ "last_trigger": null,
+ "live_page": {
+  "action_id": "A-01210",
+  "published_at": "2026-10-01T16:48:30.316Z",
+  "dialect": "d2",
+  "goal_instance": "U-04988:G07:0",
+  "title_ids": [
+   "T1678",
+   "T0522",
+   "T0526",
+   "T0528",
+   "T1683",
+   "T0533",
+   "T0534",
+   "T1687",
+   "T0548",
+   "T0556",
+   "T0568",
+   "T1677",
+   "T1679",
+   "T0525",
+   "T1681",
+   "T0536",
+   "T0531",
+   "T0539",
+   "T1682",
+   "T1688",
+   "T1684",
+   "T0535",
+   "T0584",
+   "T0596",
+   "T1707",
+   "T1730",
+   "T0779",
+   "T0829",
+   "T1784",
+   "T0575",
+   "T1755",
+   "T0566",
+   "T0607",
+   "T1710",
+   "T1722",
+   "T1728",
+   "T1713",
+   "T0609",
+   "T0701",
+   "T0612",
+   "T0789",
+   "T1685",
+   "T0585",
+   "T0545",
+   "T1690",
+   "T0570",
+   "T0676",
+   "T0552",
+   "T1806",
+   "T1753",
+   "T0850"
+  ]
+ },
+ "messages": [
+  {
+   "action_id": "A-00118",
+   "type": "push",
+   "send_at": "2026-10-01T13:30:00.000Z",
+   "status": "sent",
+   "goal_instance": "U-04988:G07:0",
+   "title_id": "T1678"
+  }
+ ],
+ "learnings": {
+  "unreachable_channels": [
+   "push"
+  ],
+  "notes": [
+   "push token invalid (message_failed): prefer other channels next time",
+   "goal G07 judged failed (no success event inside the window)"
+  ]
+ },
+ "outcomes": [
+  {
+   "kind": "agent_goal",
+   "viewer_id": "U-04988",
+   "arm": "agent",
+   "goal_instance": "U-04988:G07:0",
+   "goal_id": "G07",
+   "rule_version": 1,
+   "started_at": "2026-10-01T02:56:20.674Z",
+   "deadline": "2026-10-04T02:56:20.674Z",
+   "status": "failed",
+   "reason": "no success event inside the window",
+   "signal_event_id": null
+  }
+ ],
+ "facts": {
+  "subscription_status": {
+   "value": "never",
+   "source": "profile:U-04988@2026-09-30T00:00:00.000Z",
+   "as_of": "2026-09-29T12:20:54.855Z",
+   "freshness_s": 188859.1,
+   "rule": "profile (no contradicting event)"
+  },
+  "signup_at": {
+   "value": "2026-07-29T22:35:15.332000+00:00",
+   "source": "profile:U-04988",
+   "as_of": "2026-09-29T12:20:54.855Z",
+   "freshness_s": 188859.1,
+   "rule": "server-side profile value"
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting:e40f8906-9423-4da8-92f5-ff5bd6cf49a2",
+   "as_of": "2026-10-01T16:48:33.982Z",
+   "freshness_s": 0.0,
+   "rule": "app setting decides what the app requests"
+  },
+  "language": {
+   "value": "en",
+   "source": "app_setting:e40f8906-9423-4da8-92f5-ff5bd6cf49a2",
+   "as_of": "2026-10-01T16:48:33.982Z",
+   "freshness_s": 0.0,
+   "rule": "app language, else profile"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile:U-04988",
+   "as_of": "2026-09-29T12:20:54.855Z",
+   "freshness_s": 188859.1,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile:U-04988",
+   "as_of": "2026-09-29T12:20:54.855Z",
+   "freshness_s": 188859.1,
+   "rule": "opt-in in profile and no opt-out event (no profile row = no consent)"
+  },
+  "dialect_conflicts": {
+   "value": [
+    "profile:d4"
+   ]
+  },
+  "unreachable_channels": {
+   "value": []
+  }
+ },
+ "conflicts": [
+  "dialect: used d2 (app_setting) vs profile:d4"
+ ]
+}
